@@ -17,18 +17,22 @@
 #include <list>
 #include <string>
 #include "../conceptos/oferta.h"
+#include "../conceptos/empresa.h"
 using namespace std;
 
 class IcontroladorOferta {
 public:   
+   //Ofertas
    virtual void insertarOferta(dtOferta) = 0;
    virtual list<dtOferta*>* obtenerlistaOfertas() = 0;
-   virtual list<dtOferta*>* getListaOfertasActivas() = 0;
+   virtual list<dtOferta*>* listaOfertasActivas() = 0;
    virtual dtOferta* getDtOferta(string nroExp) = 0; 
    virtual oferta* getOferta(string nroExp) = 0;
-    
    
-    
+   //Empresas
+   virtual void insertarEmpresa(dtEmpresa) = 0;
+   virtual list<dtEmpresa*>* listarEmpresas()= 0;
+   
 private:
 
 };

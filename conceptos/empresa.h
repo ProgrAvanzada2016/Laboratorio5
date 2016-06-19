@@ -17,6 +17,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <string>
+#include "../datatypes/dtEmpresa.h"
 using namespace std;
 
 class empresa {
@@ -30,7 +31,8 @@ public:
     string getRut();
     string getNombre();
     void setRut(string rut);
-    void setNombre(string nom);  
+    void setNombre(string nom);
+    dtEmpresa* getDtEmpresa();
     virtual ~empresa();
 
 };

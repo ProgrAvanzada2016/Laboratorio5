@@ -1,16 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   ControladorOferta.h
- * Author: Alejandra
- *
- * Created on 16 de junio de 2016, 19:22
- */
-
 #ifndef CONTROLADOROFERTA_H
 #define CONTROLADOROFERTA_H
 
@@ -23,13 +10,20 @@ class ControladorOferta: public IcontroladorOferta {
 public:
     ControladorOferta();    
     
+    //Ofertas
     virtual void insertarOferta(dtOferta);
     virtual list<dtOferta*>* obtenerlistaOfertas();
     virtual dtOferta* getDtOferta(string nroExp);
     virtual oferta* getOferta(string nroExp);
     virtual list<dtOferta*>* listaOfertasActivas ();
     virtual list<DtEstudiante*>* obtenerListaEstOf(string nroExp);
+    
+    //Entrevistas
     virtual void altaEntrevista(string ci,date fecha);
+    
+    //Empresas
+    virtual void insertarEmpresa(dtEmpresa);
+    virtual list<dtEmpresa*>* listarEmpresas();
     
     virtual ~ControladorOferta();
 private:

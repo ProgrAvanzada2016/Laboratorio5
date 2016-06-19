@@ -19,7 +19,6 @@ IcontroladorEstudiante* fabrica::getIControladorEstudiantes() {
     return new ControladorEstudiante;
 }
 
-/*IcontroladorOferta* fabrica::getIControladorOferta() {
+IcontroladorOferta* fabrica::getIControladorOferta() {
     return new ControladorOferta;
 }
-*/

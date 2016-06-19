@@ -44,4 +44,6 @@ void empresa::setNombre(string nombre) {
 
 empresa::~empresa() {
 }
-
+dtEmpresa* empresa::getDtEmpresa(){
+    return new dtEmpresa(this->getRut(), this->getNombre());
+}

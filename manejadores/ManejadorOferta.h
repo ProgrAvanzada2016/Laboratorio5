@@ -33,6 +33,7 @@ public:
     oferta* getOferta(string nroExp);
     void insertarOferta(oferta*);
     
+    
 private:
     static ManejadorOferta* instancia;
     map<string, oferta*> ofertas;

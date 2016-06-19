@@ -12,7 +12,7 @@
  */
 
 #include "ManejadorOferta.h"
-#include "../conceptos/oferta.h"
+//#include "../conceptos/oferta.h"
 
 
 ManejadorOferta* ManejadorOferta::instancia = NULL;  
