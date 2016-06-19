@@ -21,8 +21,8 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU-Linux
-CND_DLIB_EXT=so
+CND_PLATFORM=Cygwin-Windows
+CND_DLIB_EXT=dll
 CND_CONF=Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -58,8 +58,10 @@ OBJECTFILES= \
 	${OBJECTDIR}/datatypes/dtLlamado.o \
 	${OBJECTDIR}/datatypes/dtOferta.o \
 	${OBJECTDIR}/datatypes/dtRango.o \
+	${OBJECTDIR}/datatypes/dtSucursal.o \
 	${OBJECTDIR}/fabricas/fabrica.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/manejadores/ManejadorEmpresa.o \
 	${OBJECTDIR}/manejadores/ManejadorEstudiante.o \
 	${OBJECTDIR}/manejadores/ManejadorOferta.o
 
@@ -82,11 +84,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/labratorio5
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/laboratorio5.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/labratorio5: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/laboratorio5.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/labratorio5 ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/laboratorio5 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/conceptos/Estudiante.o: conceptos/Estudiante.cpp 
 	${MKDIR} -p ${OBJECTDIR}/conceptos
@@ -203,6 +205,11 @@ ${OBJECTDIR}/datatypes/dtRango.o: datatypes/dtRango.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/datatypes/dtRango.o datatypes/dtRango.cpp
 
+${OBJECTDIR}/datatypes/dtSucursal.o: datatypes/dtSucursal.cpp 
+	${MKDIR} -p ${OBJECTDIR}/datatypes
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/datatypes/dtSucursal.o datatypes/dtSucursal.cpp
+
 ${OBJECTDIR}/fabricas/fabrica.o: fabricas/fabrica.cpp 
 	${MKDIR} -p ${OBJECTDIR}/fabricas
 	${RM} "$@.d"
@@ -212,6 +219,11 @@ ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/manejadores/ManejadorEmpresa.o: manejadores/ManejadorEmpresa.cpp 
+	${MKDIR} -p ${OBJECTDIR}/manejadores
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/manejadores/ManejadorEmpresa.o manejadores/ManejadorEmpresa.cpp
 
 ${OBJECTDIR}/manejadores/ManejadorEstudiante.o: manejadores/ManejadorEstudiante.cpp 
 	${MKDIR} -p ${OBJECTDIR}/manejadores
@@ -229,7 +241,7 @@ ${OBJECTDIR}/manejadores/ManejadorOferta.o: manejadores/ManejadorOferta.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/labratorio5
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/laboratorio5.exe
 
 # Subprojects
 .clean-subprojects:

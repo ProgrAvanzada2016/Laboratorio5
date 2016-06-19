@@ -13,7 +13,7 @@ persona::persona(const persona& orig){
   */
 }
 
-persona::persona(string ci, string nom, string ape, date fec){
+persona::persona(string ci, string nom, string ape, date* fec){
   /*
   this->ci=ci;
   this-> nombre=nom;

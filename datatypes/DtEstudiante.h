@@ -24,21 +24,23 @@ public:
     DtEstudiante(const DtEstudiante& orig);
     virtual ~DtEstudiante();
     
-    DtEstudiante(string ci, string nombre, string apellido, date fecha) :
-    ci(ci), nombre(nombre), apellido(apellido), fechaNac(fecha) {
+    DtEstudiante(string ci, string nombre, string apellido, date* fecha, string telefono) :
+    ci(ci), nombre(nombre), apellido(apellido), fechaNac(fecha), telefono(telefono) {
     }
 
     string GetApellido() const;
     string GetNombre() const;
     string GetCi() const;
-    date GetFecha() const;
+    date* GetFecha() const;
+    string GetTelefono() const;
     
     
 private:
     string ci;
     string nombre;
     string apellido;
-    date fechaNac;
+    date* fechaNac;
+    string telefono;
     
 };
 

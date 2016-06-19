@@ -51,6 +51,7 @@ int date::getYear() {
     return this->aaaa;
 }
 
+
 date::~date() {
 }
 

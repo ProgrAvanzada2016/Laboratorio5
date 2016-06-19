@@ -39,7 +39,11 @@ string DtEstudiante::GetCi() const {
     return ci;
 }
 
-date DtEstudiante::GetFecha() const{
+date* DtEstudiante::GetFecha() const{
     return fechaNac;
+}
+
+string DtEstudiante::GetTelefono() const {
+    return telefono;
 }
 

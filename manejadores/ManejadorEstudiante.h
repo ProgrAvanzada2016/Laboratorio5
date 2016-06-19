@@ -24,10 +24,12 @@ using namespace std;
 class ManejadorEstudiante {
 public:
     static ManejadorEstudiante* getInstancia();
-    
+   
     void insertarEstudiante(Estudiante*);
+    void modificarEstudiante(Estudiante*);
     list<DtEstudiante*>* listarEstudiantes();
     Estudiante* getEstudiante(string);
+    
 private:
     static ManejadorEstudiante* instancia;
     map<string, Estudiante*> estudiantes;

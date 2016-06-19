@@ -10,6 +10,7 @@
       <itemPath>conceptos/Estudiante.h</itemPath>
       <itemPath>interfaces/IcontroladorEstudiante.h</itemPath>
       <itemPath>interfaces/IcontroladorOferta.h</itemPath>
+      <itemPath>manejadores/ManejadorEmpresa.h</itemPath>
       <itemPath>manejadores/ManejadorEstudiante.h</itemPath>
       <itemPath>manejadores/ManejadorOferta.h</itemPath>
       <itemPath>conceptos/aceptaCargo.h</itemPath>
@@ -24,6 +25,7 @@
       <itemPath>datatypes/dtLlamado.h</itemPath>
       <itemPath>datatypes/dtOferta.h</itemPath>
       <itemPath>datatypes/dtRango.h</itemPath>
+      <itemPath>datatypes/dtSucursal.h</itemPath>
       <itemPath>conceptos/empresa.h</itemPath>
       <itemPath>conceptos/encargado.h</itemPath>
       <itemPath>fabricas/fabrica.h</itemPath>
@@ -44,6 +46,7 @@
       <itemPath>controladores/ControladorOferta.cpp</itemPath>
       <itemPath>datatypes/DtEstudiante.cpp</itemPath>
       <itemPath>conceptos/Estudiante.cpp</itemPath>
+      <itemPath>manejadores/ManejadorEmpresa.cpp</itemPath>
       <itemPath>manejadores/ManejadorEstudiante.cpp</itemPath>
       <itemPath>manejadores/ManejadorOferta.cpp</itemPath>
       <itemPath>conceptos/aceptaCargo.cpp</itemPath>
@@ -58,6 +61,7 @@
       <itemPath>datatypes/dtLlamado.cpp</itemPath>
       <itemPath>datatypes/dtOferta.cpp</itemPath>
       <itemPath>datatypes/dtRango.cpp</itemPath>
+      <itemPath>datatypes/dtSucursal.cpp</itemPath>
       <itemPath>conceptos/empresa.cpp</itemPath>
       <itemPath>conceptos/encargado.cpp</itemPath>
       <itemPath>fabricas/fabrica.cpp</itemPath>
@@ -191,6 +195,10 @@
       </item>
       <item path="datatypes/dtRango.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="datatypes/dtSucursal.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtSucursal.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="fabricas/fabrica.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="fabricas/fabrica.h" ex="false" tool="3" flavor2="0">
@@ -203,6 +211,10 @@
       <item path="interfaces/IcontroladorOferta.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorEmpresa.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorEmpresa.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="manejadores/ManejadorEstudiante.cpp"
             ex="false"
@@ -337,6 +349,10 @@
       </item>
       <item path="datatypes/dtRango.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="datatypes/dtSucursal.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtSucursal.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="fabricas/fabrica.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="fabricas/fabrica.h" ex="false" tool="3" flavor2="0">
@@ -349,6 +365,10 @@
       <item path="interfaces/IcontroladorOferta.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorEmpresa.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorEmpresa.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="manejadores/ManejadorEstudiante.cpp"
             ex="false"

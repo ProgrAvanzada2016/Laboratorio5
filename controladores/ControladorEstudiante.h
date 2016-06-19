@@ -8,8 +8,9 @@ public:
     ControladorEstudiante();
     virtual ~ControladorEstudiante();
 
-
+    
     virtual void insertarEstudiante(DtEstudiante);
+    virtual void modificarEstudiante(DtEstudiante* dte);
     virtual list<DtEstudiante*>* listarEstudiantes();
     virtual DtEstudiante* getDataEstudiante(string);
     virtual Estudiante* getEstudiante(string);

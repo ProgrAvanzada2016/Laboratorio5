@@ -25,7 +25,6 @@ ControladorEstudiante::~ControladorEstudiante() {
 
 Estudiante* ControladorEstudiante::getEstudiante(string ci) {
     return ManejadorEstudiante::getInstancia()->getEstudiante(ci);
-    //return ManejadorEstudiantes::getEstudiante(ci);
 }
 
 void ControladorEstudiante::insertarEstudiante(DtEstudiante dte) {
@@ -33,13 +32,25 @@ void ControladorEstudiante::insertarEstudiante(DtEstudiante dte) {
     e->setCi(dte.GetCi());
     e->setNombre(dte.GetNombre());
     e->setApellido(dte.GetApellido());
+    e->setFecha(dte.GetFecha());
+    e->setTelefono(dte.GetTelefono());
           
     ManejadorEstudiante::getInstancia()->insertarEstudiante(e);
 }
 
+void ControladorEstudiante::modificarEstudiante(DtEstudiante* dte) {
+    Estudiante* e = new Estudiante();
+    e->setCi(dte->GetCi());
+    e->setNombre(dte->GetNombre());
+    e->setApellido(dte->GetApellido());
+    e->setFecha(dte->GetFecha());
+    e->setTelefono(dte->GetTelefono());
+          
+    ManejadorEstudiante::getInstancia()->modificarEstudiante(e);
+}
+
 list<DtEstudiante*>* ControladorEstudiante::listarEstudiantes() {
     return ManejadorEstudiante::getInstancia()->listarEstudiantes();
-    //return ManejadorEstudiante::getInstancia()->listarEstudiantes();
 }
 
 

@@ -23,11 +23,11 @@ class persona {
         string ci;
         string nombre;
         string apellido;
-        date fechaNac;
+        date* fechaNac;
 
 public:
     persona();
-    persona(string ci, string nom, string ape, date fec);
+    persona(string ci, string nom, string ape, date* fec);
     persona(const persona& orig);
     
     string getCi(){return this->ci;}
@@ -36,8 +36,8 @@ public:
     void setNombre(string nom){this->nombre = nom;}
     string getApellido(){return this->apellido;}
     void setApellido(string ape){this->apellido = ape;}
-    date getfecha(){return this->fechaNac;}
-    void setFecha(date fec){this->fechaNac = fec;}
+    date* getfecha(){return this->fechaNac;}
+    void setFecha(date* fec){this->fechaNac = fec;}
 };
 
 #endif /* PERSONA_H */
