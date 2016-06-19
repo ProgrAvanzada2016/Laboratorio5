@@ -71,8 +71,19 @@ void ControladorOferta::insertarEmpresa(dtEmpresa dte) {
     ManejadorEmpresa::getInstancia()->insertarEmpresa(e);
 }
 
+empresa* ControladorOferta::getEmpresa(string rut) {
+    return ManejadorEmpresa::getInstancia()->getEmpresa(rut);
+}
+
 list<dtEmpresa*>* ControladorOferta::listarEmpresas(){
    list<dtEmpresa*>* lista= ManejadorEmpresa::getInstancia()->getListEmp();
+   return lista;   
+}
+
+//Sucursales
+list<dtSucursal*>* ControladorOferta::listarSucursales(string rut){
+   empresa* e = ManejadorEmpresa::getInstancia()->getEmpresa(rut);
+   list<dtSucursal*>* lista= e->getListSucursal();
    return lista;   
 }
 

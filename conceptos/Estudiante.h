@@ -32,7 +32,8 @@ public:
     
     virtual ~Estudiante();
 private:
-   
+    string telefono;
+    int creditos;
 };
 
 #endif /* ESTUDIANTE_H */

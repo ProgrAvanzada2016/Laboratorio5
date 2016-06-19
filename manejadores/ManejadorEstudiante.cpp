@@ -1,16 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   ManejadorEstudiantes.cpp
- * Author: GrupoProgAvanzada3
- * 
- * Created on 1 de junio de 2016, 03:45 PM
- */
-
 #include <iostream>
 #include <stdio.h>
 #include <string>
@@ -32,7 +19,7 @@ Estudiante* ManejadorEstudiante::getEstudiante(string ci) {
 }
 
 void ManejadorEstudiante::insertarEstudiante(Estudiante* e) {
-      estudiantes.insert(pair<string,Estudiante*>(e->getCi(),e));
+    estudiantes.insert(pair<string,Estudiante*>(e->getCi(),e));
 }
 
 list<DtEstudiante*>* ManejadorEstudiante::listarEstudiantes() {

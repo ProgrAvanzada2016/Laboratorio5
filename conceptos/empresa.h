@@ -17,6 +17,9 @@
 #include <iostream>
 #include <stdio.h>
 #include <string>
+#include <list>
+#include <map>
+#include "sucursal.h"
 #include "../datatypes/dtEmpresa.h"
 using namespace std;
 
@@ -24,17 +27,27 @@ class empresa {
     private:
         string rut;
         string nombre;
-public:
-    empresa();
-    empresa(const empresa& orig);
-    empresa(string rut,string nombre);
-    string getRut();
-    string getNombre();
-    void setRut(string rut);
-    void setNombre(string nom);
-    dtEmpresa* getDtEmpresa();
-    virtual ~empresa();
-
+        map<string, sucursal*> sucursales;
+                
+    public:
+        //Constructores
+        empresa();
+        empresa(const empresa& orig);
+        empresa(string rut,string nombre);
+        
+        //Geters
+        string getRut();
+        string getNombre();
+        void setRut(string rut);
+        void setNombre(string nom);
+        dtEmpresa* getDtEmpresa();
+        
+        //Sucursales
+        void insertarSucursal(sucursal *);
+        list<dtSucursal*>* getListSucursal();
+        
+        //Destructor
+        virtual ~empresa();
 };
 
 #endif /* EMPRESA_H */

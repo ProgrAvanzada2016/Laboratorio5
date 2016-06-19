@@ -29,6 +29,7 @@ public:
     static ManejadorEmpresa* getInstancia();
     
     void insertarEmpresa(empresa*);
+    empresa* getEmpresa(string rut);
     list<dtEmpresa*>* getListEmp();
    
     

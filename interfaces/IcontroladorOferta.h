@@ -18,6 +18,8 @@
 #include <string>
 #include "../conceptos/oferta.h"
 #include "../conceptos/empresa.h"
+#include "../conceptos/sucursal.h"
+
 using namespace std;
 
 class IcontroladorOferta {
@@ -32,6 +34,9 @@ public:
    //Empresas
    virtual void insertarEmpresa(dtEmpresa) = 0;
    virtual list<dtEmpresa*>* listarEmpresas()= 0;
+   
+   //Sucursales
+   virtual list<dtSucursal*>* listarSucursales(string rut)= 0;
    
 private:
 

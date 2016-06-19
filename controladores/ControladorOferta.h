@@ -23,8 +23,13 @@ public:
     
     //Empresas
     virtual void insertarEmpresa(dtEmpresa);
+    virtual empresa* getEmpresa(string rut);
     virtual list<dtEmpresa*>* listarEmpresas();
     
+    //Sucursales
+    virtual list<dtSucursal*>* listarSucursales(string rut);
+    
+    //Destructor
     virtual ~ControladorOferta();
 private:
       

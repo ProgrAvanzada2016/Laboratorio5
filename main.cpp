@@ -23,43 +23,34 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    
+    string empresa;
     
     printf("Inicializando:\n");
     IcontroladorOferta* ice = fabrica::getIControladorOferta();
     
-    ice->insertarEmpresa(dtEmpresa("22222","ANCAP"));
-    ice->insertarEmpresa(dtEmpresa("33333","UTE"));
+    //Inicializando datos de prueba
+    ice->insertarEmpresa(dtEmpresa("22","ANCAP"));
+    ice->insertarEmpresa(dtEmpresa("33","UTE"));
     
-    /*ice->insertarEstudiante(DtEstudiante("2","Leo","Masliah"));
-    ice->insertarEstudiante(DtEstudiante("3","Fyodor","Dostoyevsky"));
-    ice->insertarEstudiante(DtEstudiante("324","Charles","Bukowski"));
-    ice->insertarEstudiante(DtEstudiante("12351","Eduardo","Galeano"));
-    ice->insertarEstudiante(DtEstudiante("1234","Hernan","Casciari"));
-    ice->insertarEstudiante(DtEstudiante("97237","Jared","Diamond"));
-    ice->insertarEstudiante(DtEstudiante("5893","Jorge Luis","Borges"));*/
     
-   
-    
-//    for (Estudiante* est : estudiantes) {
-//        cout << est->Getci() << ":" <<  est->Getnombre() << ":" << est->Setapellido() << endl;
-//    }
-    
+    //Funcion listar empresas
     list<dtEmpresa*>* empresas = ice->listarEmpresas();
-
     for (std::list<dtEmpresa*>::iterator it=empresas->begin(); it!=empresas->end(); ++it){
         dtEmpresa* emp = *it;
         cout << "Rut:" << emp->getRut() << " Nombre:" <<  emp->getNombre() << endl;
-        //printf("Estudiante:%s, Nombre:%s, Apellido:%s\n", est->GetCi().data(), est->GetNombre().data(), est->GetApellido().data());
     }
-   
     
-//    requiere tener el estandar c++11!!
-//    printf("\nOtra forma de recorrrer\n");
-//    for (DtEstudiante* est : *estudiantes) {
-//        printf("Estudiante:%s, Nombre:%s, Apellido:%s\n", est->GetCi().data(), est->GetNombre().data(), est->GetApellido().data());
-//    }
-
+    //Funcion listar sucurrsales
+    cout << "Seleccione empresa: " << endl;
+    cin >> empresa;
+    cin.ignore(100, '\n');
+    list<dtSucursal*>* sucursales = ice->listarSucursales(empresa);
+    for (std::list<dtSucursal*>::iterator it=sucursales->begin(); it!=sucursales->end(); ++it){
+        dtSucursal* suc = *it;
+        cout << "Nombre:" << suc->getNombre() << endl;
+    }
+    
+    //Funcion listar secciones
     
     return 0;
 }

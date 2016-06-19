@@ -17,6 +17,10 @@
 #include <iostream>
 #include <stdio.h>
 #include <string>
+#include <map>
+#include "seccion.h"
+#include "../datatypes/dtSucursal.h"
+
 using namespace std;
 
 class sucursal {
@@ -24,6 +28,7 @@ class sucursal {
         string nombre;
         string telefono;
         string direccion;
+        map<string, seccion*> secciones;
 public:
     sucursal();
     sucursal(const sucursal& orig);
@@ -33,11 +38,16 @@ public:
     string getNombre();
     string getTelefono();
     string getDireccion();
+    dtSucursal* getDtSucursal();
+    
     //setters
     void setNombre(string nombre);
     void setTelefono(string telefono);
     void setDireccion(string direccion);
     
+    
+    //Secciones
+    void insertarSeccion(seccion *);
     virtual ~sucursal();
 
 };

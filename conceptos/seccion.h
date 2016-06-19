@@ -31,7 +31,6 @@ class seccion {
             void setNombre();
             void setInterno();
             virtual ~seccion();
-            
 };
 
 #endif /* SECCION_H */
