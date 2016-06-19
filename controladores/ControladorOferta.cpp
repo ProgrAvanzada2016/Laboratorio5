@@ -1,6 +1,7 @@
 #include "ControladorOferta.h"
 #include "../manejadores/ManejadorOferta.h"
 #include "../manejadores/ManejadorEmpresa.h"
+#include "../manejadores/ManejadorAsignatura.h"
 #include "../conceptos/oferta.h"
 #include "../conceptos/empresa.h"
 #include "../datatypes/dtOferta.h"
@@ -8,13 +9,16 @@
 
 using namespace std;
 
+empresa* e;
+sucursal* s;
+oferta* o;
 
 ControladorOferta::ControladorOferta() {
 }
 
 //Oferta
 void ControladorOferta::insertarOferta(dtOferta dte) {
-    oferta* o = new oferta();
+    o = new oferta();
     o->SetNroExp(dte.getNroExp());
     o->SetTitulo(dte.getTitulo()); 
     o->SetDescripcion(dte.getDescripcion());
@@ -82,9 +86,23 @@ list<dtEmpresa*>* ControladorOferta::listarEmpresas(){
 
 //Sucursales
 list<dtSucursal*>* ControladorOferta::listarSucursales(string rut){
-   empresa* e = ManejadorEmpresa::getInstancia()->getEmpresa(rut);
+   e = ManejadorEmpresa::getInstancia()->getEmpresa(rut);
    list<dtSucursal*>* lista= e->getListSucursal();
    return lista;   
+}
+
+//Secciones
+list<dtSeccion*>* ControladorOferta::listarSecciones(string nombre){
+   s = e->getSucursal(nombre);
+   list<dtSeccion*>* lista= s->getListSeccion();
+   return lista;   
+}
+
+//Asignatura
+void ControladorOferta::insertarAsignaturaOferta(string codigo) {
+    if (ManejadorAsignatura::getInstancia()->existeAsignatura(codigo)){
+        o->insertarAsignatura(ManejadorAsignatura::getInstancia()->getAsignatura(codigo));
+    }
 }
 
 //Destructor

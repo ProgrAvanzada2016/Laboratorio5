@@ -29,6 +29,12 @@ public:
     //Sucursales
     virtual list<dtSucursal*>* listarSucursales(string rut);
     
+    //Secciones
+    virtual list<dtSeccion*>* listarSecciones(string nombre);
+    
+    //Asignatura
+    virtual void insertarAsignaturaOferta(string codigo);
+    
     //Destructor
     virtual ~ControladorOferta();
 private:

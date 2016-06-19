@@ -17,6 +17,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <string>
+#include <list>
 #include <map>
 #include "seccion.h"
 #include "../datatypes/dtSucursal.h"
@@ -48,6 +49,7 @@ public:
     
     //Secciones
     void insertarSeccion(seccion *);
+    list<dtSeccion*>* getListSeccion();
     virtual ~sucursal();
 
 };

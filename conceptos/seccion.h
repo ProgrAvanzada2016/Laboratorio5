@@ -15,21 +15,34 @@
 #define SECCION_H
 #include <iostream>
 #include <stdio.h>
+#include <map>
 #include <string>
+#include "oferta.h"
+#include "../datatypes/dtSeccion.h"
 using namespace std;
 
 class seccion {
     private:
             string nombre;
             int interno;
+            map<string, oferta*> ofertas;
     public:
+            //Constructores
             seccion();
             seccion(const seccion& orig);
             seccion(string nombre,int interno);
+            
+            //Geters
             string getNombre();
             int getInterno();
             void setNombre();
             void setInterno();
+            dtSeccion* getDtSeccion();
+            
+            //Ofertas
+            void inseratOferta(oferta*);
+            
+            //Destructor
             virtual ~seccion();
 };
 

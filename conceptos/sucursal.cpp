@@ -85,6 +85,14 @@ void sucursal::insertarSeccion(seccion* s) {
       secciones.insert(pair<string,seccion*>(s->getNombre(),s));
 }
 
+list<dtSeccion*>* sucursal::getListSeccion() {
+    list<dtSeccion*>* result = new list<dtSeccion*>;
+    for (std::map<string, seccion*>::iterator it=secciones.begin(); it!=secciones.end(); ++it){
+        result->push_front(it->second->getDtSeccion());
+    }
+    return result;
+}
+
 sucursal::~sucursal() {
 }
 

@@ -17,9 +17,11 @@
 #include <iostream>
 #include <stdio.h>
 #include <string>
+#include <map>
 #include <list>
 #include "date.h"
 #include "Estudiante.h"
+#include "asignatura.h"
 #include "../datatypes/dtRango.h"
 #include "../datatypes/dtOferta.h"
 
@@ -35,6 +37,7 @@ class oferta {
                 date fechaInicio;
                 date fechaFin;
                 int cantPuestos;
+                map<string,asignatura*> asignaturas;
     
                         
             public:
@@ -73,7 +76,11 @@ class oferta {
                    
                    void InscribeEstudianteOferta(Estudiante e);
                    
+                   //Entrevista
                    void AltaEntrevista(string ci,date fecha);
+                   
+                   //Asignatura}
+                   void insertarAsignatura(asignatura *);
 };
 
 #endif /* OFERTA_H */
