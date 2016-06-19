@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>controladores/ControladorEstudiante.h</itemPath>
+      <itemPath>controladores/ControladorOferta.h</itemPath>
+      <itemPath>datatypes/DtEstudiante.h</itemPath>
+      <itemPath>conceptos/Estudiante.h</itemPath>
+      <itemPath>interfaces/IcontroladorEstudiante.h</itemPath>
+      <itemPath>interfaces/IcontroladorOferta.h</itemPath>
+      <itemPath>manejadores/ManejadorEstudiante.h</itemPath>
+      <itemPath>manejadores/ManejadorOferta.h</itemPath>
+      <itemPath>conceptos/aceptaCargo.h</itemPath>
+      <itemPath>conceptos/aprobacion.h</itemPath>
+      <itemPath>conceptos/asignatura.h</itemPath>
+      <itemPath>conceptos/carrera.h</itemPath>
+      <itemPath>conceptos/date.h</itemPath>
+      <itemPath>datatypes/dtAcepto.h</itemPath>
+      <itemPath>datatypes/dtAsignatura.h</itemPath>
+      <itemPath>datatypes/dtEmpresa.h</itemPath>
+      <itemPath>datatypes/dtEstudianteInfo.h</itemPath>
+      <itemPath>datatypes/dtLlamado.h</itemPath>
+      <itemPath>datatypes/dtOferta.h</itemPath>
+      <itemPath>datatypes/dtRango.h</itemPath>
+      <itemPath>conceptos/empresa.h</itemPath>
+      <itemPath>conceptos/encargado.h</itemPath>
+      <itemPath>fabricas/fabrica.h</itemPath>
+      <itemPath>conceptos/inscripcion.h</itemPath>
+      <itemPath>conceptos/oferta.h</itemPath>
+      <itemPath>conceptos/persona.h</itemPath>
+      <itemPath>conceptos/seccion.h</itemPath>
+      <itemPath>conceptos/sucursal.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>controladores/ControladorEstudiante.cpp</itemPath>
+      <itemPath>controladores/ControladorOferta.cpp</itemPath>
+      <itemPath>datatypes/DtEstudiante.cpp</itemPath>
+      <itemPath>conceptos/Estudiante.cpp</itemPath>
+      <itemPath>manejadores/ManejadorEstudiante.cpp</itemPath>
+      <itemPath>manejadores/ManejadorOferta.cpp</itemPath>
+      <itemPath>conceptos/aceptaCargo.cpp</itemPath>
+      <itemPath>conceptos/aprobacion.cpp</itemPath>
+      <itemPath>conceptos/asignatura.cpp</itemPath>
+      <itemPath>conceptos/carrera.cpp</itemPath>
+      <itemPath>conceptos/date.cpp</itemPath>
+      <itemPath>datatypes/dtAcepto.cpp</itemPath>
+      <itemPath>datatypes/dtAsignatura.cpp</itemPath>
+      <itemPath>datatypes/dtEmpresa.cpp</itemPath>
+      <itemPath>datatypes/dtEstudianteInfo.cpp</itemPath>
+      <itemPath>datatypes/dtLlamado.cpp</itemPath>
+      <itemPath>datatypes/dtOferta.cpp</itemPath>
+      <itemPath>datatypes/dtRango.cpp</itemPath>
+      <itemPath>conceptos/empresa.cpp</itemPath>
+      <itemPath>conceptos/encargado.cpp</itemPath>
+      <itemPath>fabricas/fabrica.cpp</itemPath>
+      <itemPath>conceptos/inscripcion.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>conceptos/oferta.cpp</itemPath>
+      <itemPath>conceptos/persona.cpp</itemPath>
+      <itemPath>conceptos/seccion.cpp</itemPath>
+      <itemPath>conceptos/sucursal.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="conceptos/Estudiante.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/Estudiante.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/aceptaCargo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/aceptaCargo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/aprobacion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/aprobacion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/asignatura.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/asignatura.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/carrera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/carrera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/date.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/date.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/empresa.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/empresa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/encargado.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/encargado.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/inscripcion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/inscripcion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/oferta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/oferta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/persona.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/persona.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/seccion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/seccion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/sucursal.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/sucursal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="controladores/ControladorEstudiante.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="controladores/ControladorEstudiante.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="controladores/ControladorOferta.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="controladores/ControladorOferta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/DtEstudiante.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/DtEstudiante.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtAcepto.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtAcepto.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtAsignatura.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtAsignatura.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtEmpresa.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtEmpresa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtEstudianteInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtEstudianteInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtLlamado.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtLlamado.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtOferta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtOferta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtRango.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtRango.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fabricas/fabrica.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fabricas/fabrica.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="interfaces/IcontroladorEstudiante.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="interfaces/IcontroladorOferta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorEstudiante.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorEstudiante.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorOferta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorOferta.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="conceptos/Estudiante.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/Estudiante.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/aceptaCargo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/aceptaCargo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/aprobacion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/aprobacion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/asignatura.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/asignatura.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/carrera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/carrera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/date.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/date.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/empresa.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/empresa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/encargado.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/encargado.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/inscripcion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/inscripcion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/oferta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/oferta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/persona.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/persona.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/seccion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/seccion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="conceptos/sucursal.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="conceptos/sucursal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="controladores/ControladorEstudiante.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="controladores/ControladorEstudiante.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="controladores/ControladorOferta.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="controladores/ControladorOferta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/DtEstudiante.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/DtEstudiante.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtAcepto.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtAcepto.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtAsignatura.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtAsignatura.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtEmpresa.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtEmpresa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtEstudianteInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtEstudianteInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtLlamado.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtLlamado.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtOferta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtOferta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtRango.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtRango.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fabricas/fabrica.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fabricas/fabrica.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="interfaces/IcontroladorEstudiante.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="interfaces/IcontroladorOferta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorEstudiante.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorEstudiante.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorOferta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorOferta.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
