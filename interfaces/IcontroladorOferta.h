@@ -39,9 +39,11 @@ public:
    virtual list<dtSucursal*>* listarSucursales(string rut)= 0;
    
    //Secciones
+   virtual void agregarOfertaSeccion(string nombre)=0;
    virtual list<dtSeccion*>* listarSecciones(string nombre)= 0;
    
    //Asignatura
+   virtual void insertarAsignatura(dtAsignatura)=0;
    virtual void insertarAsignaturaOferta(string codigo)=0;
    
 private:

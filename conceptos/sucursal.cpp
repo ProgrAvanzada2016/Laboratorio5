@@ -93,6 +93,10 @@ list<dtSeccion*>* sucursal::getListSeccion() {
     return result;
 }
 
+seccion* sucursal::getSeccion(string nombre){
+    return secciones.find(nombre)->second;
+}
+
 sucursal::~sucursal() {
 }
 

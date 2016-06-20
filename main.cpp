@@ -20,7 +20,9 @@ int main(int argc, char** argv) {
     //Inicializando datos de prueba
     ice->insertarEmpresa(dtEmpresa("22","ANCAP"));
     ice->insertarEmpresa(dtEmpresa("33","UTE"));
-    
+    ice->insertarAsignatura(dtAsignatura("1","MATEMATICA",15));
+    ice->insertarAsignatura(dtAsignatura("2","GEOMETRIA",10));
+    ice->insertarAsignatura(dtAsignatura("3","FISICA",25));
     
     //Funcion listar empresas
     list<dtEmpresa*>* empresas = ice->listarEmpresas();
@@ -110,9 +112,11 @@ int main(int argc, char** argv) {
         cin.ignore(100, '\n');
         ice->insertarAsignaturaOferta(asig);
         
-        cout << "1-> Ingreas mas asignaturas\n 0->Salir " << endl;
+        cout << "1-> Ingreas mas asignaturas\n0->Salir " << endl;
         cin >> op;
     }while(op!=0);
+    ice->agregarOfertaSeccion(sec);
+    cout << "Oferta creada exitosamente" << endl;
     
     return 0;
 }

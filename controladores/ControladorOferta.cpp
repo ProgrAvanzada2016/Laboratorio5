@@ -98,11 +98,27 @@ list<dtSeccion*>* ControladorOferta::listarSecciones(string nombre){
    return lista;   
 }
 
+void ControladorOferta::agregarOfertaSeccion(string nombre) {
+    seccion* secc;
+    secc = s->getSeccion(nombre);
+    secc->inseratOferta(o);
+}
+
+
 //Asignatura
 void ControladorOferta::insertarAsignaturaOferta(string codigo) {
     if (ManejadorAsignatura::getInstancia()->existeAsignatura(codigo)){
         o->insertarAsignatura(ManejadorAsignatura::getInstancia()->getAsignatura(codigo));
     }
+}
+
+void ControladorOferta::insertarAsignatura(dtAsignatura dte) {
+    asignatura* a = new asignatura();
+    a->setCodigo(dte.GetCodigo());
+    a->setNombre(dte.GetNombre());
+    a->setCreditos(dte.GetCreditos());
+          
+    ManejadorAsignatura::getInstancia()->insertarAsignatura(a);
 }
 
 //Destructor

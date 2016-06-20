@@ -30,9 +30,11 @@ public:
     virtual list<dtSucursal*>* listarSucursales(string rut);
     
     //Secciones
+    virtual void agregarOfertaSeccion(string nombre);
     virtual list<dtSeccion*>* listarSecciones(string nombre);
     
     //Asignatura
+    virtual void insertarAsignatura(dtAsignatura);
     virtual void insertarAsignaturaOferta(string codigo);
     
     //Destructor
