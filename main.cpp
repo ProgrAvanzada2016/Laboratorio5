@@ -12,9 +12,11 @@ void enterParaContinuar();
 void inicializar();
 void altaOfertaLaboral();
 void altaEtrevista();
+void modificarEstudiante();
 
 bool inicializado;
 IcontroladorOferta* ice;
+IcontroladorEstudiante* icEstudiante;
 
 int main(int argc, char** argv) {
     int menu_op;
@@ -66,7 +68,7 @@ int main(int argc, char** argv) {
                 break;
             case 7:
                 do {
-                    inicializar();
+                    modificarEstudiante();
                 } while (0);
                 enterParaContinuar();
                 break;
@@ -129,13 +131,22 @@ void inicializar(){
     if (!inicializado) {
         printf("Inicializando.... :\n");
         ice = fabrica::getIControladorOferta();
-
+        icEstudiante = fabrica::getIControladorEstudiantes();
+        date* miFecha = new date(19,6,2016);
+        
         ice->insertarEmpresa(dtEmpresa("22","ANCAP"));
         ice->insertarEmpresa(dtEmpresa("33","UTE"));
         ice->insertarAsignatura(dtAsignatura("1","MATEMATICA",15));
         ice->insertarAsignatura(dtAsignatura("2","GEOMETRIA",10));
         ice->insertarAsignatura(dtAsignatura("3","FISICA",25));
         
+        icEstudiante->insertarEstudiante(DtEstudiante("1","Leo","Masliah", miFecha, "09957241"));
+        icEstudiante->insertarEstudiante(DtEstudiante("2","Fyodor","Dostoyevsky", miFecha, "098423754"));
+        icEstudiante->insertarEstudiante(DtEstudiante("3","Charles","Bukowski", miFecha, "095723123"));
+        icEstudiante->insertarEstudiante(DtEstudiante("4","Eduardo","Galeano", miFecha, "091889922"));
+        icEstudiante->insertarEstudiante(DtEstudiante("5","Hernan","Casciari", miFecha, "094436750"));
+        icEstudiante->insertarEstudiante(DtEstudiante("6","Jared","Diamond", miFecha, "099215347"));
+        icEstudiante->insertarEstudiante(DtEstudiante("7","Jorge Luis","Borges", miFecha, "097421290"));
         inicializado = true;
         printf("OK INICIALIZADO\n");
     }
@@ -242,6 +253,35 @@ void altaOfertaLaboral() {
     cout << "Oferta creada exitosamente" << endl;
 }
 
+void modificarEstudiante(){
+    string cedula, apellido, nombre, telefono;
+    int dd,mm,aaaa;
+        cout<< "Ingrese cedula de estudiante a modificar: ";
+        cin>> cedula;
+    Estudiante* est = new Estudiante();
+    est = icEstudiante->getEstudiante(cedula);
+        cout<< "Estudiante: " << est->getApellido() << ", " << est->getNombre()<<endl;
+        cout<< "Ingrese apellido: ";
+        cin>> apellido;
+        cout<< "Ingrese nombre: ";
+        cin>> nombre;
+        cout<< "Ingrese telefono: ";
+        cin>> telefono;
+        cout<< "Ingrese dia de nacimiento: ";
+        cin>> dd;
+        cout<< "Ingrese mes de nacimiento: ";
+        cin>> mm;
+        cout<< "Ingrese año de nacimiento: ";
+        cin>> aaaa;
+    date* fechaNac = new date(dd,mm,aaaa);
+    DtEstudiante* estModificado = new DtEstudiante(est->getCi(), nombre, apellido, fechaNac, telefono);
+    icEstudiante->modificarEstudiante(estModificado);
+        cout<< "Estudiante modificado:" << endl;
+    est = icEstudiante->getEstudiante(cedula);
+        cout<< est->getApellido() << ", " << est->getNombre()<< ". Tel: " << est->getTelefono() << endl;
+        cout<< "Fecha nacimiento: " << est->getfecha()->getDay() << "/"<< est->getfecha()->getMonth() << "/" << est->getfecha()->getYear();
+        enterParaContinuar();
+}    
 //Crea una netrevista
 void altaEtrevista() {
     cout << "implementado...." << endl;
