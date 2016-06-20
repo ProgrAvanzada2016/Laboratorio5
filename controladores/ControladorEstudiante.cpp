@@ -16,11 +16,11 @@
 using namespace std;
 
 
+//ESTUDIANTE
 ControladorEstudiante::ControladorEstudiante() {
 }
 
 ControladorEstudiante::~ControladorEstudiante() {
-
 }
 
 Estudiante* ControladorEstudiante::getEstudiante(string ci) {
@@ -56,6 +56,24 @@ list<DtEstudiante*>* ControladorEstudiante::listarEstudiantes() {
 
 DtEstudiante* ControladorEstudiante::getDataEstudiante(string ci){
     return ManejadorEstudiante::getInstancia()->getEstudiante(ci)->getDtEstudiante();
+}
+
+//CARRERA
+carrera* ControladorEstudiante::getCarrera(string codigo) {
+    return ManejadorCarrera::getInstancia()->getCarrera(codigo);
+}
+
+asignatura* ControladorEstudiante::getAsignatura(string codigo){
+    return ManejadorCarrera::getInstancia()->getAsignatura(codigo);
+}
+   
+void ControladorEstudiante::insertarAsignatura(asignatura* a) {
+    asignatura* asig = new asignatura();
+    asig->setCodigo(a->getCodigo());
+    asig->setCreditos(a->getCreditos());
+    asig->setNombre(a->getNombre());
+    
+    ManejadorCarrera::getInstancia()->insertarAsignatura(asig);
 }
 
 

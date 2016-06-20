@@ -1,5 +1,6 @@
 
 #include "Estudiante.h"
+#include "carrera.h"
 
 Estudiante::Estudiante(string ci, string nombre, string apellido, date* fecNac) {
     this->setApellido(apellido);
@@ -45,3 +46,10 @@ void Estudiante::modificarEstudiante(Estudiante* e){
     this->setTelefono(e->getTelefono());
     this->setFecha(e->getfecha());
 }
+
+void Estudiante::agregarCarrera(carrera* c) {
+    carreras.insert(pair<string,carrera*>(c->getCodigo(),c));
+}
+
+
+

@@ -10,6 +10,8 @@
       <itemPath>conceptos/Estudiante.h</itemPath>
       <itemPath>interfaces/IcontroladorEstudiante.h</itemPath>
       <itemPath>interfaces/IcontroladorOferta.h</itemPath>
+      <itemPath>manejadores/ManejadorAsignatura.h</itemPath>
+      <itemPath>manejadores/ManejadorCarrera.h</itemPath>
       <itemPath>manejadores/ManejadorEmpresa.h</itemPath>
       <itemPath>manejadores/ManejadorEstudiante.h</itemPath>
       <itemPath>manejadores/ManejadorOferta.h</itemPath>
@@ -25,6 +27,7 @@
       <itemPath>datatypes/dtLlamado.h</itemPath>
       <itemPath>datatypes/dtOferta.h</itemPath>
       <itemPath>datatypes/dtRango.h</itemPath>
+      <itemPath>datatypes/dtSeccion.h</itemPath>
       <itemPath>datatypes/dtSucursal.h</itemPath>
       <itemPath>conceptos/empresa.h</itemPath>
       <itemPath>conceptos/encargado.h</itemPath>
@@ -46,6 +49,8 @@
       <itemPath>controladores/ControladorOferta.cpp</itemPath>
       <itemPath>datatypes/DtEstudiante.cpp</itemPath>
       <itemPath>conceptos/Estudiante.cpp</itemPath>
+      <itemPath>manejadores/ManejadorAsignatura.cpp</itemPath>
+      <itemPath>manejadores/ManejadorCarrera.cpp</itemPath>
       <itemPath>manejadores/ManejadorEmpresa.cpp</itemPath>
       <itemPath>manejadores/ManejadorEstudiante.cpp</itemPath>
       <itemPath>manejadores/ManejadorOferta.cpp</itemPath>
@@ -61,6 +66,7 @@
       <itemPath>datatypes/dtLlamado.cpp</itemPath>
       <itemPath>datatypes/dtOferta.cpp</itemPath>
       <itemPath>datatypes/dtRango.cpp</itemPath>
+      <itemPath>datatypes/dtSeccion.cpp</itemPath>
       <itemPath>datatypes/dtSucursal.cpp</itemPath>
       <itemPath>conceptos/empresa.cpp</itemPath>
       <itemPath>conceptos/encargado.cpp</itemPath>
@@ -197,6 +203,8 @@
       </item>
       <item path="datatypes/dtSeccion.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="datatypes/dtSeccion.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="datatypes/dtSucursal.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="datatypes/dtSucursal.h" ex="false" tool="3" flavor2="0">
@@ -218,6 +226,12 @@
             ex="false"
             tool="1"
             flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorAsignatura.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorCarrera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorCarrera.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="manejadores/ManejadorEmpresa.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -358,6 +372,8 @@
       </item>
       <item path="datatypes/dtSeccion.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="datatypes/dtSeccion.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="datatypes/dtSucursal.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="datatypes/dtSucursal.h" ex="false" tool="3" flavor2="0">
@@ -379,6 +395,12 @@
             ex="false"
             tool="1"
             flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorAsignatura.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorCarrera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorCarrera.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="manejadores/ManejadorEmpresa.cpp" ex="false" tool="1" flavor2="0">
       </item>

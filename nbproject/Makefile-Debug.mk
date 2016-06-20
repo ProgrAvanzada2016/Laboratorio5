@@ -63,6 +63,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/fabricas/fabrica.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/manejadores/ManejadorAsignatura.o \
+	${OBJECTDIR}/manejadores/ManejadorCarrera.o \
 	${OBJECTDIR}/manejadores/ManejadorEmpresa.o \
 	${OBJECTDIR}/manejadores/ManejadorEstudiante.o \
 	${OBJECTDIR}/manejadores/ManejadorOferta.o
@@ -231,6 +232,11 @@ ${OBJECTDIR}/manejadores/ManejadorAsignatura.o: manejadores/ManejadorAsignatura.
 	${MKDIR} -p ${OBJECTDIR}/manejadores
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/manejadores/ManejadorAsignatura.o manejadores/ManejadorAsignatura.cpp
+
+${OBJECTDIR}/manejadores/ManejadorCarrera.o: manejadores/ManejadorCarrera.cpp 
+	${MKDIR} -p ${OBJECTDIR}/manejadores
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/manejadores/ManejadorCarrera.o manejadores/ManejadorCarrera.cpp
 
 ${OBJECTDIR}/manejadores/ManejadorEmpresa.o: manejadores/ManejadorEmpresa.cpp 
 	${MKDIR} -p ${OBJECTDIR}/manejadores

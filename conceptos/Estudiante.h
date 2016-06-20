@@ -21,6 +21,8 @@
 #include "../conceptos/asignatura.h"
 #include "../conceptos/carrera.h"
 #include <string>
+#include <list>
+#include <map>
 
 using namespace std;
 
@@ -40,6 +42,7 @@ public:
     void setCreditos(int creditos);
     void setTelefono(string telefono);
     
+    
     void modificarEstudiante(Estudiante* e);
     dtEstudianteInfo* crearDtEstudianteInfo();
     void agregarAsignatura(asignatura* a);
@@ -52,7 +55,7 @@ public:
 private:
     string telefono;
     int creditos;
-   
+    map<string, carrera*> carreras;
 };
 
 #endif /* ESTUDIANTE_H */

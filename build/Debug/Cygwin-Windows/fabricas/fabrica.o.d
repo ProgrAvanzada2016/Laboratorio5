@@ -28,6 +28,11 @@ build/Debug/Cygwin-Windows/fabricas/fabrica.o: fabricas/fabrica.cpp \
  fabricas/../interfaces/../conceptos/sucursal.h \
  fabricas/../controladores/ControladorEstudiante.h \
  fabricas/../controladores/../interfaces/IcontroladorEstudiante.h \
+ fabricas/../controladores/../manejadores/ManejadorCarrera.h \
+ fabricas/../controladores/../manejadores/../conceptos/asignatura.h \
+ fabricas/../controladores/../manejadores/../conceptos/carrera.h \
+ fabricas/../controladores/../conceptos/asignatura.h \
+ fabricas/../controladores/../conceptos/carrera.h \
  fabricas/../controladores/ControladorOferta.h \
  fabricas/../controladores/../interfaces/IcontroladorOferta.h
 
@@ -90,6 +95,16 @@ fabricas/../interfaces/../conceptos/sucursal.h:
 fabricas/../controladores/ControladorEstudiante.h:
 
 fabricas/../controladores/../interfaces/IcontroladorEstudiante.h:
+
+fabricas/../controladores/../manejadores/ManejadorCarrera.h:
+
+fabricas/../controladores/../manejadores/../conceptos/asignatura.h:
+
+fabricas/../controladores/../manejadores/../conceptos/carrera.h:
+
+fabricas/../controladores/../conceptos/asignatura.h:
+
+fabricas/../controladores/../conceptos/carrera.h:
 
 fabricas/../controladores/ControladorOferta.h:
 

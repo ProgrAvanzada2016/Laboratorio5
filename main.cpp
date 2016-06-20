@@ -7,23 +7,146 @@
 
 using namespace std;
 
-/*
- * 
- */
+void imprimirMenu();
+void enterParaContinuar();
+void inicializar();
+void altaOfertaLaboral();
+void altaEtrevista();
+
+bool inicializado;
+IcontroladorOferta* ice;
+
 int main(int argc, char** argv) {
+    int menu_op;
+      
+    do {
+        imprimirMenu();
+        cin>>menu_op;
+        cin.ignore(100, '\n');
+        fflush(stdin);
+
+        switch(menu_op) {
+            case 0:
+                break;
+            case 1:
+                do {
+                    altaOfertaLaboral();
+                 } while (0);
+                enterParaContinuar();
+                break;
+            case 2:
+                do {
+                    altaEtrevista();
+                } while (0);
+                enterParaContinuar();
+                break;
+            case 3:
+                do {
+                    inicializar();
+                } while (0);
+                enterParaContinuar();
+                break;
+            case 4:
+                do {
+                    inicializar();
+                } while (0);
+                enterParaContinuar();
+                break;
+            case 5:
+                do {
+                    inicializar();
+                } while (0);
+                enterParaContinuar();
+                break;
+            case 6:
+                do {
+                    inicializar();
+                } while (0);
+                enterParaContinuar();
+                break;
+            case 7:
+                do {
+                    inicializar();
+                } while (0);
+                enterParaContinuar();
+                break;
+            case 8:
+                do {
+                    inicializar();
+                } while (0);
+                enterParaContinuar();
+                break;
+            case 9:
+                do {
+                    inicializar();
+                } while (0);
+                enterParaContinuar();
+                break;
+            case 10:
+                do {
+                    inicializar();
+                } while (0);
+                enterParaContinuar();
+                break;
+            default:
+		cout<<"Opcion no valida, intente nuevamente"<<endl;
+                enterParaContinuar();
+        }
+    }while(menu_op != 0);
+    return 0;
+}
+
+//Despliega el manu 
+void imprimirMenu() {
+
+    system("clear");
+    cout<<"MENU DE OPCIONES" <<endl << endl;
+    cout<<"0  - SALIR" << endl;
+    cout<<"1  - ALTA OFERTA LABORAL" << endl;
+    cout<<"2  ­ ALTA ENTREVISTA" << endl;
+    cout<<"3  - INSCRIPCION OFERTA LABORAL" << endl;
+    cout<<"4  - LISTAR OFERTAS ACTIVAS" << endl;
+    cout<<"5  ­ CONSULTAR DATOS ESTUDIANTE" << endl;
+    cout<<"6  - ASIGNACION DE OFERTA A ESTUDIANTE" << endl;
+    cout<<"7  - MODIFICAR ESTUDIANTE" << endl;
+    cout<<"8  - MODIFICAR LLAMADO"<< endl;
+    cout<<"9  ­ DAR DE BAJA LLAMADO" << endl;
+    cout<<"10 - INICIALIZAR" << endl << endl;
+    cout<<"Ingrese la opcion deseada: ";
+}
+
+//Espera a que se ingrese un eneter para continuar
+void enterParaContinuar() {
+    int c;
+
+    cout<<endl<<"Presione ENTER para continuar... ";
+    fflush(stdout);
+    do c = getchar(); while ((c != '\n') && (c != EOF));
+}
+
+//Inicializando datos de prueba
+void inicializar(){
+    if (!inicializado) {
+        printf("Inicializando.... :\n");
+        ice = fabrica::getIControladorOferta();
+
+        ice->insertarEmpresa(dtEmpresa("22","ANCAP"));
+        ice->insertarEmpresa(dtEmpresa("33","UTE"));
+        ice->insertarAsignatura(dtAsignatura("1","MATEMATICA",15));
+        ice->insertarAsignatura(dtAsignatura("2","GEOMETRIA",10));
+        ice->insertarAsignatura(dtAsignatura("3","FISICA",25));
+        
+        inicializado = true;
+        printf("OK INICIALIZADO\n");
+    }
+}
+
+//Crea una oferta laboral
+void altaOfertaLaboral() {
     string empresa;
     string sucursal;
     string sec;
-   
-    printf("Inicializando:\n");
     
-    fabrica* fab = new fabrica();
-    IcontroladorOferta* ice = fabrica::getIControladorOferta();
-    IcontroladorEstudiante* icEstudiante = fabrica::getIControladorEstudiantes();
-    
-    //Inicializando datos de prueba
-    fab->cargarDatos();
-   
     //Funcion listar empresas
     list<dtEmpresa*>* empresas = ice->listarEmpresas();
     for (std::list<dtEmpresa*>::iterator it=empresas->begin(); it!=empresas->end(); ++it){
@@ -117,34 +240,9 @@ int main(int argc, char** argv) {
     }while(op!=0);
     ice->agregarOfertaSeccion(sec);
     cout << "Oferta creada exitosamente" << endl;
-    
-    /*MADIFICAR DATOS ESTUDIANTE*/
-    string cedula, apellido, nombre, telefono;
-    int dd,mm,aaaa;
-    cout<< "Ingrese cedula de estudiante a modificar: ";
-    cin>> cedula;
-    Estudiante* est = new Estudiante();
-    est = icEstudiante->getEstudiante(cedula);
-    cout<< "Estudiante: " << est->getApellido() << ", " << est->getNombre()<<endl;
-    cout<< "Ingrese apellido: ";
-    cin>> apellido;
-    cout<< "Ingrese nombre: ";
-    cin>> nombre;
-    cout<< "Ingrese telefono: ";
-    cin>> telefono;
-    cout<< "Ingrese dia de nacimiento: ";
-    cin>> dd;
-    cout<< "Ingrese mes de nacimiento: ";
-    cin>> mm;
-    cout<< "Ingrese año de nacimiento: ";
-    cin>> aaaa;
-    date* fechaNac = new date(dd,mm,aaaa);
-    DtEstudiante* estModificado = new DtEstudiante(est->getCi(), nombre, apellido, fechaNac, telefono);
-    icEstudiante->modificarEstudiante(estModificado);
-    cout<< "Estudiante modificado:" << endl;
-    est = icEstudiante->getEstudiante(cedula);
-    cout<< est->getApellido() << ", " << est->getNombre()<< ". Tel: " << est->getTelefono() << endl;
-    cout<< "Fecha nacimiento: " << est->getfecha()->getDay() << "/"<< est->getfecha()->getMonth() << "/" << est->getfecha()->getYear();
-    
-    return 0;
+}
+
+//Crea una netrevista
+void altaEtrevista() {
+    cout << "implementado...." << endl;
 }

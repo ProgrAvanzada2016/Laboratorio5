@@ -14,6 +14,11 @@ build/Debug/Cygwin-Windows/controladores/ControladorEstudiante.o: \
  controladores/../interfaces/../conceptos/../conceptos/asignatura.h \
  controladores/../interfaces/../conceptos/../conceptos/../datatypes/dtAsignatura.h \
  controladores/../interfaces/../conceptos/../conceptos/carrera.h \
+ controladores/../manejadores/ManejadorCarrera.h \
+ controladores/../manejadores/../conceptos/asignatura.h \
+ controladores/../manejadores/../conceptos/carrera.h \
+ controladores/../conceptos/asignatura.h \
+ controladores/../conceptos/carrera.h \
  controladores/../manejadores/ManejadorEstudiante.h \
  controladores/../manejadores/../conceptos/Estudiante.h
 
@@ -44,6 +49,16 @@ controladores/../interfaces/../conceptos/../conceptos/asignatura.h:
 controladores/../interfaces/../conceptos/../conceptos/../datatypes/dtAsignatura.h:
 
 controladores/../interfaces/../conceptos/../conceptos/carrera.h:
+
+controladores/../manejadores/ManejadorCarrera.h:
+
+controladores/../manejadores/../conceptos/asignatura.h:
+
+controladores/../manejadores/../conceptos/carrera.h:
+
+controladores/../conceptos/asignatura.h:
+
+controladores/../conceptos/carrera.h:
 
 controladores/../manejadores/ManejadorEstudiante.h:
 

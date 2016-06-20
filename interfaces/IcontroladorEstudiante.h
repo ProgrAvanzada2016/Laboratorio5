@@ -28,12 +28,18 @@ public:
 //    virtual list<DtEstudiante*> listarEstudiantes() = 0;
 //    virtual DtEstudiante* getDataEstudiante(string) = 0;
     
+    //estudiante
     virtual void insertarEstudiante(DtEstudiante) = 0;
     virtual void modificarEstudiante(DtEstudiante*) = 0;
     virtual list<DtEstudiante*>* listarEstudiantes() = 0;
     virtual DtEstudiante* getDataEstudiante(string) = 0;
     virtual Estudiante* getEstudiante(string) = 0;
     
+    //carrera
+    virtual carrera* getCarrera(string codigo)=0;
+    virtual asignatura* getAsignatura(string codigo)=0;
+    virtual void insertarAsignatura(asignatura*)=0;
+
 private:
 
 };
