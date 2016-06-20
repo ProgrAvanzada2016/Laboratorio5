@@ -21,6 +21,8 @@ class fabrica {
 public:
     static IcontroladorEstudiante* getIControladorEstudiantes();
     static IcontroladorOferta* getIControladorOferta();
+    
+    void cargarDatos();
 private:
 
 };

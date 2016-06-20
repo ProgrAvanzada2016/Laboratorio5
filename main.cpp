@@ -24,51 +24,109 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    
+    string empresa;
+    string sucursal;
+    string sec;
     
     printf("Inicializando:\n");
-    IcontroladorOferta* ico = fabrica::getIControladorOferta();
-    IcontroladorEstudiante* ice = fabrica::getIControladorEstudiantes();
+    IcontroladorOferta* ice = fabrica::getIControladorOferta();
     
-    date* miFecha = new date(19,6,2016);
+    //Inicializando datos de prueba
+    ice->insertarEmpresa(dtEmpresa("22","ANCAP"));
+    ice->insertarEmpresa(dtEmpresa("33","UTE"));
     
-    ico->insertarEmpresa(dtEmpresa("22222","ANCAP"));
-    ico->insertarEmpresa(dtEmpresa("33333","UTE"));
     
-    ice->insertarEstudiante(DtEstudiante("1","Leo","Masliah", miFecha, "09957241"));
-    ice->insertarEstudiante(DtEstudiante("2","Fyodor","Dostoyevsky", miFecha, "098423754"));
-    ice->insertarEstudiante(DtEstudiante("3","Charles","Bukowski", miFecha, "095723123"));
-    ice->insertarEstudiante(DtEstudiante("4","Eduardo","Galeano", miFecha, "091889922"));
-    ice->insertarEstudiante(DtEstudiante("5","Hernan","Casciari", miFecha, "094436750"));
-    ice->insertarEstudiante(DtEstudiante("6","Jared","Diamond", miFecha, "099215347"));
-    ice->insertarEstudiante(DtEstudiante("7","Jorge Luis","Borges", miFecha, "097421290"));
+    //Funcion listar empresas
+    list<dtEmpresa*>* empresas = ice->listarEmpresas();
+    for (std::list<dtEmpresa*>::iterator it=empresas->begin(); it!=empresas->end(); ++it){
+        dtEmpresa* emp = *it;
+        cout << "Rut:" << emp->getRut() << " Nombre:" <<  emp->getNombre() << endl;
+    }
     
-    string cedula, apellido, nombre, telefono;
-    int dd,mm,aaaa;
-    cout<< "Ingrese cedula de estudiante a modificar: ";
-    cin>> cedula;
-    Estudiante* est = new Estudiante();
-    est = ice->getEstudiante(cedula);
-    cout<< "Estudiante: " << est->getApellido() << ", " << est->getNombre()<<endl;
-    cout<< "Ingrese apellido: ";
-    cin>> apellido;
-    cout<< "Ingrese nombre: ";
-    cin>> nombre;
-    cout<< "Ingrese telefono: ";
-    cin>> telefono;
-    cout<< "Ingrese dia de nacimiento: ";
-    cin>> dd;
-    cout<< "Ingrese mes de nacimiento: ";
-    cin>> mm;
-    cout<< "Ingrese año de nacimiento: ";
-    cin>> aaaa;
-    date* fechaNac = new date(dd,mm,aaaa);
-    DtEstudiante* estModificado = new DtEstudiante(est->getCi(), nombre, apellido, fechaNac, telefono);
-    ice->modificarEstudiante(estModificado);
-    cout<< "Estudiante modificado:" << endl;
-    est = ice->getEstudiante(cedula);
-    cout<< est->getApellido() << ", " << est->getNombre()<< ". Tel: " << est->getTelefono() << endl;
-    cout<< "Fecha nacimiento: " << est->getfecha()->getDay() << "/"<< est->getfecha()->getMonth() << "/" << est->getfecha()->getYear();
+    //Funcion listar sucurrsales
+    cout << "Seleccione empresa: " << endl;
+    cin >> empresa;
+    cin.ignore(100, '\n');
+    list<dtSucursal*>* sucursales = ice->listarSucursales(empresa);
+    for (std::list<dtSucursal*>::iterator it=sucursales->begin(); it!=sucursales->end(); ++it){
+        dtSucursal* suc = *it;
+        cout << "Nombre:" << suc->getNombre() << endl;
+    }
+    
+    //Funcion listar secciones
+    cout << "Seleccione sucursal: " << endl;
+    cin >> sucursal;
+    cin.ignore(100, '\n');
+    list<dtSeccion*>* secciones = ice->listarSecciones(sucursal);
+    for (std::list<dtSeccion*>::iterator it=secciones->begin(); it!=secciones->end(); ++it){
+        dtSeccion* secc = *it;
+        cout << "Nombre:" << secc->getNombre() << endl;
+    }
+    
+    //Funcion crear oferta
+    string exp,titulo,desc;
+    int min,max,cantP,iDia,iMes,iAno,fDia,fMes,fAno,horas;
+    
+    cout << "Ingrese seccion: " << endl;
+    cin >> sec;
+    cout << "Ingrese numero de expediente: " << endl;
+    cin >> exp;
+    cin.ignore(100, '\n');
+    cout << "Ingrese ingrese titulo " << endl;
+    cin >> titulo;
+    cin.ignore(100, '\n');
+    cout << "Ingrese descripcion: " << endl;
+    cin >> desc;
+    cin.ignore(100, '\n');
+    cout << "Ingrese salario minimo: " << endl;
+    cin >> min;
+    cin.ignore(100, '\n');
+    cout << "Ingrese salario maximo: " << endl;
+    cin >> max;
+    cin.ignore(100, '\n');
+    cout << "Ingrese horas diarias: " << endl;
+    cin >> horas;
+    cin.ignore(100, '\n');
+    cout << "Ingrese dia de inicio: " << endl;
+    cin >> iDia;
+    cin.ignore(100, '\n');
+    cout << "Ingrese mes de inicio: " << endl;
+    cin >> iMes;
+    cin.ignore(100, '\n');
+    cout << "Ingrese año de inicio: " << endl;
+    cin >> iAno;
+    cin.ignore(100, '\n');
+    cout << "Ingrese dia de finalizacion: " << endl;
+    cin >> fDia;
+    cin.ignore(100, '\n');
+    cout << "Ingrese mes de finalizacion: " << endl;
+    cin >> fMes;
+    cin.ignore(100, '\n');
+    cout << "Ingrese año de finalizacion: " << endl;
+    cin >> fAno;
+    cin.ignore(100, '\n');
+    cout << "Ingrese cantidad de puestos: " << endl;
+    cin >> cantP;
+    cin.ignore(100, '\n');
+    
+    //fechaI(iDia,iMes, iAno);date
+    date fechaI(iDia,iMes, iAno);
+    date fechaF(fDia,fMes, fAno);
+    dtRango r(min,max);
+    dtOferta o(exp,titulo,desc,r,horas,fechaI,fechaF,cantP);
+    ice->insertarOferta(o);
+    
+    int op;
+    string asig;
+    do{
+        cout << "Ingrese codigo asignatura requerida: " << endl;
+        cin >> asig;
+        cin.ignore(100, '\n');
+        ice->insertarAsignaturaOferta(asig);
+        
+        cout << "1-> Ingreas mas asignaturas\n 0->Salir " << endl;
+        cin >> op;
+    }while(op!=0);
+    
     return 0;
 }
-
