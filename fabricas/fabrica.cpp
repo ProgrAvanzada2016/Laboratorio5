@@ -32,6 +32,10 @@ void fabrica::cargarDatos(){
     ico->insertarEmpresa(dtEmpresa("22222","ANCAP"));
     ico->insertarEmpresa(dtEmpresa("33333","UTE"));
     
+    ico->insertarAsignatura(dtAsignatura("1","MATEMATICA",15));
+    ico->insertarAsignatura(dtAsignatura("2","GEOMETRIA",10));
+    ico->insertarAsignatura(dtAsignatura("3","FISICA",25));
+
     ice->insertarEstudiante(DtEstudiante("1","Leo","Masliah", miFecha, "09957241"));
     ice->insertarEstudiante(DtEstudiante("2","Fyodor","Dostoyevsky", miFecha, "098423754"));
     ice->insertarEstudiante(DtEstudiante("3","Charles","Bukowski", miFecha, "095723123"));
@@ -39,4 +43,5 @@ void fabrica::cargarDatos(){
     ice->insertarEstudiante(DtEstudiante("5","Hernan","Casciari", miFecha, "094436750"));
     ice->insertarEstudiante(DtEstudiante("6","Jared","Diamond", miFecha, "099215347"));
     ice->insertarEstudiante(DtEstudiante("7","Jorge Luis","Borges", miFecha, "097421290"));
-}
+    
+    }

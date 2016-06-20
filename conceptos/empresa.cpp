@@ -72,6 +72,10 @@ void empresa::insertarSucursal(sucursal* s) {
       sucursales.insert(pair<string,sucursal*>(s->getNombre(),s));
 }
 
+sucursal* empresa::getSucursal(string nombre){
+    return sucursales.find(nombre)->second;
+}
+
 list<dtSucursal*>* empresa::getListSucursal() {
     list<dtSucursal*>* result = new list<dtSucursal*>;
     for (std::map<string, sucursal*>::iterator it=sucursales.begin(); it!=sucursales.end(); ++it){

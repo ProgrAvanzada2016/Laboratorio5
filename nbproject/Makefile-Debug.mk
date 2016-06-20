@@ -58,9 +58,11 @@ OBJECTFILES= \
 	${OBJECTDIR}/datatypes/dtLlamado.o \
 	${OBJECTDIR}/datatypes/dtOferta.o \
 	${OBJECTDIR}/datatypes/dtRango.o \
+	${OBJECTDIR}/datatypes/dtSeccion.o \
 	${OBJECTDIR}/datatypes/dtSucursal.o \
 	${OBJECTDIR}/fabricas/fabrica.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/manejadores/ManejadorAsignatura.o \
 	${OBJECTDIR}/manejadores/ManejadorEmpresa.o \
 	${OBJECTDIR}/manejadores/ManejadorEstudiante.o \
 	${OBJECTDIR}/manejadores/ManejadorOferta.o
@@ -205,6 +207,11 @@ ${OBJECTDIR}/datatypes/dtRango.o: datatypes/dtRango.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/datatypes/dtRango.o datatypes/dtRango.cpp
 
+${OBJECTDIR}/datatypes/dtSeccion.o: datatypes/dtSeccion.cpp 
+	${MKDIR} -p ${OBJECTDIR}/datatypes
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/datatypes/dtSeccion.o datatypes/dtSeccion.cpp
+
 ${OBJECTDIR}/datatypes/dtSucursal.o: datatypes/dtSucursal.cpp 
 	${MKDIR} -p ${OBJECTDIR}/datatypes
 	${RM} "$@.d"
@@ -219,6 +226,11 @@ ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/manejadores/ManejadorAsignatura.o: manejadores/ManejadorAsignatura.cpp 
+	${MKDIR} -p ${OBJECTDIR}/manejadores
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/manejadores/ManejadorAsignatura.o manejadores/ManejadorAsignatura.cpp
 
 ${OBJECTDIR}/manejadores/ManejadorEmpresa.o: manejadores/ManejadorEmpresa.cpp 
 	${MKDIR} -p ${OBJECTDIR}/manejadores

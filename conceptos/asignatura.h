@@ -18,6 +18,8 @@
 #include <iostream>
 #include <stdio.h>
 #include <string>
+#include "../datatypes/dtAsignatura.h"
+
 using namespace std;
 
 class asignatura {
@@ -29,10 +31,13 @@ public:
     asignatura();
     asignatura(const asignatura& orig);
     asignatura(string codigo, string nombre, int creditos);
+    
     //getters
     string getCodigo();
     string getNombre();
     int getCreditos();
+    dtAsignatura* getDtAsignatura();
+    
     //setters
     void setCodigo(string codigo);
     void setNombre(string nombre);

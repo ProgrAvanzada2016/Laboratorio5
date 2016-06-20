@@ -1,16 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   main.cpp
- * Author: clobes
- *
- * Created on 18 de junio de 2016, 03:56 PM
- */
-
 #include <cstdlib>
 
 #include "datatypes/dtEmpresa.h"
@@ -27,15 +14,16 @@ int main(int argc, char** argv) {
     string empresa;
     string sucursal;
     string sec;
-    
+   
     printf("Inicializando:\n");
+    
+    fabrica* fab = new fabrica();
     IcontroladorOferta* ice = fabrica::getIControladorOferta();
+    IcontroladorEstudiante* icEstudiante = fabrica::getIControladorEstudiantes();
     
     //Inicializando datos de prueba
-    ice->insertarEmpresa(dtEmpresa("22","ANCAP"));
-    ice->insertarEmpresa(dtEmpresa("33","UTE"));
-    
-    
+    fab->cargarDatos();
+   
     //Funcion listar empresas
     list<dtEmpresa*>* empresas = ice->listarEmpresas();
     for (std::list<dtEmpresa*>::iterator it=empresas->begin(); it!=empresas->end(); ++it){
@@ -124,9 +112,39 @@ int main(int argc, char** argv) {
         cin.ignore(100, '\n');
         ice->insertarAsignaturaOferta(asig);
         
-        cout << "1-> Ingreas mas asignaturas\n 0->Salir " << endl;
+        cout << "1-> Ingreas mas asignaturas\n0->Salir " << endl;
         cin >> op;
     }while(op!=0);
+    ice->agregarOfertaSeccion(sec);
+    cout << "Oferta creada exitosamente" << endl;
+    
+    /*MADIFICAR DATOS ESTUDIANTE*/
+    string cedula, apellido, nombre, telefono;
+    int dd,mm,aaaa;
+    cout<< "Ingrese cedula de estudiante a modificar: ";
+    cin>> cedula;
+    Estudiante* est = new Estudiante();
+    est = icEstudiante->getEstudiante(cedula);
+    cout<< "Estudiante: " << est->getApellido() << ", " << est->getNombre()<<endl;
+    cout<< "Ingrese apellido: ";
+    cin>> apellido;
+    cout<< "Ingrese nombre: ";
+    cin>> nombre;
+    cout<< "Ingrese telefono: ";
+    cin>> telefono;
+    cout<< "Ingrese dia de nacimiento: ";
+    cin>> dd;
+    cout<< "Ingrese mes de nacimiento: ";
+    cin>> mm;
+    cout<< "Ingrese año de nacimiento: ";
+    cin>> aaaa;
+    date* fechaNac = new date(dd,mm,aaaa);
+    DtEstudiante* estModificado = new DtEstudiante(est->getCi(), nombre, apellido, fechaNac, telefono);
+    icEstudiante->modificarEstudiante(estModificado);
+    cout<< "Estudiante modificado:" << endl;
+    est = icEstudiante->getEstudiante(cedula);
+    cout<< est->getApellido() << ", " << est->getNombre()<< ". Tel: " << est->getTelefono() << endl;
+    cout<< "Fecha nacimiento: " << est->getfecha()->getDay() << "/"<< est->getfecha()->getMonth() << "/" << est->getfecha()->getYear();
     
     return 0;
 }

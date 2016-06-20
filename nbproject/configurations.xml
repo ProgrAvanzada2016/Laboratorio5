@@ -195,6 +195,8 @@
       </item>
       <item path="datatypes/dtRango.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="datatypes/dtSeccion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="datatypes/dtSucursal.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="datatypes/dtSucursal.h" ex="false" tool="3" flavor2="0">
@@ -211,6 +213,11 @@
       <item path="interfaces/IcontroladorOferta.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorAsignatura.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
       </item>
       <item path="manejadores/ManejadorEmpresa.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -349,6 +356,8 @@
       </item>
       <item path="datatypes/dtRango.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="datatypes/dtSeccion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="datatypes/dtSucursal.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="datatypes/dtSucursal.h" ex="false" tool="3" flavor2="0">
@@ -365,6 +374,11 @@
       <item path="interfaces/IcontroladorOferta.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="manejadores/ManejadorAsignatura.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
       </item>
       <item path="manejadores/ManejadorEmpresa.cpp" ex="false" tool="1" flavor2="0">
       </item>

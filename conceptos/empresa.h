@@ -44,6 +44,7 @@ class empresa {
         
         //Sucursales
         void insertarSucursal(sucursal *);
+        sucursal* getSucursal(string nombre);
         list<dtSucursal*>* getListSucursal();
         
         //Destructor

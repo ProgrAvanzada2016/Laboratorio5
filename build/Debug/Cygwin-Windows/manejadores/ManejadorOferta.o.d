@@ -9,7 +9,9 @@ build/Debug/Cygwin-Windows/manejadores/ManejadorOferta.o: \
  manejadores/../conceptos/../datatypes/dtOferta.h \
  manejadores/../conceptos/../datatypes/dtRango.h \
  manejadores/../conceptos/../conceptos/asignatura.h \
+ manejadores/../conceptos/../conceptos/../datatypes/dtAsignatura.h \
  manejadores/../conceptos/../conceptos/carrera.h \
+ manejadores/../conceptos/asignatura.h \
  manejadores/../conceptos/../datatypes/dtRango.h \
  manejadores/../conceptos/../datatypes/dtOferta.h \
  manejadores/../datatypes/dtOferta.h
@@ -38,7 +40,11 @@ manejadores/../conceptos/../datatypes/dtRango.h:
 
 manejadores/../conceptos/../conceptos/asignatura.h:
 
+manejadores/../conceptos/../conceptos/../datatypes/dtAsignatura.h:
+
 manejadores/../conceptos/../conceptos/carrera.h:
+
+manejadores/../conceptos/asignatura.h:
 
 manejadores/../conceptos/../datatypes/dtRango.h:
 

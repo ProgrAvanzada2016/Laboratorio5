@@ -5,8 +5,9 @@ build/Debug/Cygwin-Windows/conceptos/oferta.o: conceptos/oferta.cpp \
  conceptos/../datatypes/dtEstudianteInfo.h \
  conceptos/../datatypes/dtAsignatura.h conceptos/../datatypes/dtOferta.h \
  conceptos/../datatypes/dtRango.h conceptos/../conceptos/asignatura.h \
- conceptos/../conceptos/carrera.h conceptos/../datatypes/dtRango.h \
- conceptos/../datatypes/dtOferta.h
+ conceptos/../conceptos/../datatypes/dtAsignatura.h \
+ conceptos/../conceptos/carrera.h conceptos/asignatura.h \
+ conceptos/../datatypes/dtRango.h conceptos/../datatypes/dtOferta.h
 
 conceptos/oferta.h:
 
@@ -30,7 +31,11 @@ conceptos/../datatypes/dtRango.h:
 
 conceptos/../conceptos/asignatura.h:
 
+conceptos/../conceptos/../datatypes/dtAsignatura.h:
+
 conceptos/../conceptos/carrera.h:
+
+conceptos/asignatura.h:
 
 conceptos/../datatypes/dtRango.h:
 

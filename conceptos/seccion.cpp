@@ -18,17 +18,25 @@ string seccion::getNombre(){
     return this->nombre;
 }
 
- int seccion::getInterno(){
+int seccion::getInterno(){
     return this->interno;
- }
- //setters
+}
  
+dtSeccion* seccion::getDtSeccion(){
+    return new dtSeccion(this->getNombre(), this->getInterno());
+}
+ 
+//setters
 void seccion::setNombre(){
     this->nombre=nombre;
 }
 
 void seccion::setInterno(){
     this->interno=interno;
+}
+
+void seccion::inseratOferta(oferta* o){ 
+    ofertas.insert(std::pair<string,oferta*>(o->GetNroExp(),o));
 }
 
 seccion::~seccion() {

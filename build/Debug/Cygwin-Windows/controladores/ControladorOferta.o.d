@@ -12,12 +12,16 @@ build/Debug/Cygwin-Windows/controladores/ControladorOferta.o: \
  controladores/../interfaces/../conceptos/../datatypes/dtOferta.h \
  controladores/../interfaces/../conceptos/../datatypes/dtRango.h \
  controladores/../interfaces/../conceptos/../conceptos/asignatura.h \
+ controladores/../interfaces/../conceptos/../conceptos/../datatypes/dtAsignatura.h \
  controladores/../interfaces/../conceptos/../conceptos/carrera.h \
+ controladores/../interfaces/../conceptos/asignatura.h \
  controladores/../interfaces/../conceptos/../datatypes/dtRango.h \
  controladores/../interfaces/../conceptos/../datatypes/dtOferta.h \
  controladores/../interfaces/../conceptos/empresa.h \
  controladores/../interfaces/../conceptos/sucursal.h \
  controladores/../interfaces/../conceptos/seccion.h \
+ controladores/../interfaces/../conceptos/oferta.h \
+ controladores/../interfaces/../conceptos/../datatypes/dtSeccion.h \
  controladores/../interfaces/../conceptos/../datatypes/dtSucursal.h \
  controladores/../interfaces/../conceptos/../datatypes/dtEmpresa.h \
  controladores/../interfaces/../conceptos/sucursal.h \
@@ -27,6 +31,9 @@ build/Debug/Cygwin-Windows/controladores/ControladorOferta.o: \
  controladores/../manejadores/ManejadorEmpresa.h \
  controladores/../manejadores/../conceptos/empresa.h \
  controladores/../manejadores/../datatypes/dtEmpresa.h \
+ controladores/../manejadores/ManejadorAsignatura.h \
+ controladores/../manejadores/../conceptos/asignatura.h \
+ controladores/../manejadores/../datatypes/dtAsignatura.h \
  controladores/../conceptos/oferta.h controladores/../conceptos/empresa.h \
  controladores/../datatypes/dtOferta.h \
  controladores/../datatypes/dtEmpresa.h
@@ -57,7 +64,11 @@ controladores/../interfaces/../conceptos/../datatypes/dtRango.h:
 
 controladores/../interfaces/../conceptos/../conceptos/asignatura.h:
 
+controladores/../interfaces/../conceptos/../conceptos/../datatypes/dtAsignatura.h:
+
 controladores/../interfaces/../conceptos/../conceptos/carrera.h:
+
+controladores/../interfaces/../conceptos/asignatura.h:
 
 controladores/../interfaces/../conceptos/../datatypes/dtRango.h:
 
@@ -68,6 +79,10 @@ controladores/../interfaces/../conceptos/empresa.h:
 controladores/../interfaces/../conceptos/sucursal.h:
 
 controladores/../interfaces/../conceptos/seccion.h:
+
+controladores/../interfaces/../conceptos/oferta.h:
+
+controladores/../interfaces/../conceptos/../datatypes/dtSeccion.h:
 
 controladores/../interfaces/../conceptos/../datatypes/dtSucursal.h:
 
@@ -86,6 +101,12 @@ controladores/../manejadores/ManejadorEmpresa.h:
 controladores/../manejadores/../conceptos/empresa.h:
 
 controladores/../manejadores/../datatypes/dtEmpresa.h:
+
+controladores/../manejadores/ManejadorAsignatura.h:
+
+controladores/../manejadores/../conceptos/asignatura.h:
+
+controladores/../manejadores/../datatypes/dtAsignatura.h:
 
 controladores/../conceptos/oferta.h:
 

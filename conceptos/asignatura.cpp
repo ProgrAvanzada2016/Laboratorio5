@@ -1,16 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   asignatura.cpp
- * Author: GrupoProgAvanzada2016
- * 
- * Created on 12 de junio de 2016, 17:19
- */
-
 #include "asignatura.h"
 
 asignatura::asignatura() {
@@ -40,6 +27,10 @@ string asignatura::getNombre() {
 
 int asignatura::getCreditos() {
     return this->creditos;
+}
+
+dtAsignatura* asignatura::getDtAsignatura(){
+    return new dtAsignatura(this->getCodigo(), this->getNombre(), this->getCreditos());
 }
 
 //setters

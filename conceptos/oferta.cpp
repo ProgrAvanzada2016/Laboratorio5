@@ -168,5 +168,8 @@ void oferta::Modificar(string titulo, string descripcion, dtRango rangoSalarial,
                    
  void oferta::AltaEntrevista(string ci,date fecha){
  
+ }
  
+ void oferta::insertarAsignatura(asignatura* a){
+     asignaturas.insert(std::pair<string,asignatura*>(a->getCodigo(),a));
  }

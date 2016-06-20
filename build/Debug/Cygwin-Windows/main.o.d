@@ -9,11 +9,14 @@ build/Debug/Cygwin-Windows/main.o: main.cpp datatypes/dtEmpresa.h \
  interfaces/../conceptos/../datatypes/dtOferta.h \
  interfaces/../conceptos/../datatypes/dtRango.h \
  interfaces/../conceptos/../conceptos/asignatura.h \
+ interfaces/../conceptos/../conceptos/../datatypes/dtAsignatura.h \
  interfaces/../conceptos/../conceptos/carrera.h \
+ interfaces/../conceptos/asignatura.h \
  interfaces/../conceptos/../datatypes/dtRango.h \
  interfaces/../conceptos/../datatypes/dtOferta.h \
  interfaces/../conceptos/empresa.h interfaces/../conceptos/sucursal.h \
- interfaces/../conceptos/seccion.h \
+ interfaces/../conceptos/seccion.h interfaces/../conceptos/oferta.h \
+ interfaces/../conceptos/../datatypes/dtSeccion.h \
  interfaces/../conceptos/../datatypes/dtSucursal.h \
  interfaces/../conceptos/../datatypes/dtEmpresa.h \
  interfaces/../conceptos/sucursal.h fabricas/fabrica.h \
@@ -47,7 +50,11 @@ interfaces/../conceptos/../datatypes/dtRango.h:
 
 interfaces/../conceptos/../conceptos/asignatura.h:
 
+interfaces/../conceptos/../conceptos/../datatypes/dtAsignatura.h:
+
 interfaces/../conceptos/../conceptos/carrera.h:
+
+interfaces/../conceptos/asignatura.h:
 
 interfaces/../conceptos/../datatypes/dtRango.h:
 
@@ -58,6 +65,10 @@ interfaces/../conceptos/empresa.h:
 interfaces/../conceptos/sucursal.h:
 
 interfaces/../conceptos/seccion.h:
+
+interfaces/../conceptos/oferta.h:
+
+interfaces/../conceptos/../datatypes/dtSeccion.h:
 
 interfaces/../conceptos/../datatypes/dtSucursal.h:
 
