@@ -36,5 +36,10 @@ list<DtEstudiante*>* ManejadorEstudiante::listarEstudiantes() {
     return result;    
 }
 
+void ManejadorEstudiante::agregarCarreraEst(string ci,carrera* c){
+    estudiantes.find(ci)->second->agregarCarrera(c);
+    
+}
+
 
 

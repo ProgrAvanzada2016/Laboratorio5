@@ -29,9 +29,7 @@ using namespace std;
 
 class Estudiante : public persona {
 public:
-    Estudiante() : 
-    persona() {
-    }
+    Estudiante();
     
     Estudiante(string ci, string nombre, string apellido, date* fecNac);
     Estudiante(string ci, string nombre, string apellido, date* fecNac, string telefono);
@@ -39,9 +37,10 @@ public:
     
     int getCreditos();
     string getTelefono();
+    map<string, carrera*> getCarrerasEst();
     void setCreditos(int creditos);
     void setTelefono(string telefono);
-    
+    void setCarrerasEst(map<string, carrera*> carrerasEst);
     
     void modificarEstudiante(Estudiante* e);
     dtEstudianteInfo* crearDtEstudianteInfo();
@@ -55,7 +54,7 @@ public:
 private:
     string telefono;
     int creditos;
-    map<string, carrera*> carreras;
+    map<string, carrera*> carrerasEst;
 };
 
 #endif /* ESTUDIANTE_H */

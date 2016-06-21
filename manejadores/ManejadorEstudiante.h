@@ -18,7 +18,8 @@
 #include <list>
 #include <string>
 #include "../conceptos/Estudiante.h"
-
+#include "../conceptos/carrera.h"
+#include "../datatypes/dtCarrera.h"
 using namespace std;
 
 class ManejadorEstudiante {
@@ -29,6 +30,7 @@ public:
     void modificarEstudiante(Estudiante*);
     list<DtEstudiante*>* listarEstudiantes();
     Estudiante* getEstudiante(string);
+    void agregarCarreraEst(string ci,carrera* c);
     
 private:
     static ManejadorEstudiante* instancia;

@@ -22,6 +22,7 @@
       <itemPath>conceptos/date.h</itemPath>
       <itemPath>datatypes/dtAcepto.h</itemPath>
       <itemPath>datatypes/dtAsignatura.h</itemPath>
+      <itemPath>datatypes/dtCarrera.h</itemPath>
       <itemPath>datatypes/dtEmpresa.h</itemPath>
       <itemPath>datatypes/dtEstudianteInfo.h</itemPath>
       <itemPath>datatypes/dtLlamado.h</itemPath>
@@ -61,6 +62,7 @@
       <itemPath>conceptos/date.cpp</itemPath>
       <itemPath>datatypes/dtAcepto.cpp</itemPath>
       <itemPath>datatypes/dtAsignatura.cpp</itemPath>
+      <itemPath>datatypes/dtCarrera.cpp</itemPath>
       <itemPath>datatypes/dtEmpresa.cpp</itemPath>
       <itemPath>datatypes/dtEstudianteInfo.cpp</itemPath>
       <itemPath>datatypes/dtLlamado.cpp</itemPath>
@@ -180,6 +182,10 @@
       <item path="datatypes/dtAsignatura.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="datatypes/dtAsignatura.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtCarrera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtCarrera.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="datatypes/dtEmpresa.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -349,6 +355,10 @@
       <item path="datatypes/dtAsignatura.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="datatypes/dtAsignatura.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datatypes/dtCarrera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="datatypes/dtCarrera.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="datatypes/dtEmpresa.cpp" ex="false" tool="1" flavor2="0">
       </item>

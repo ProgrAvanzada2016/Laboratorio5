@@ -4,6 +4,8 @@
 #include "../manejadores/ManejadorCarrera.h"
 #include "../conceptos/asignatura.h"
 #include "../conceptos/carrera.h"
+#include "../conceptos/Estudiante.h"
+#include "../datatypes/dtCarrera.h"
 using namespace std;
 
 
@@ -23,6 +25,9 @@ public:
     virtual carrera* getCarrera(string codigo);
     virtual asignatura* getAsignatura(string codigo);
     virtual void insertarAsignatura(asignatura*);
+    virtual void insertarCarrera(carrera*);
+    virtual void agregarCarreraEst(string ci,carrera* c);
+    virtual list<dtCarrera*>* listarCarreras();
 private:
     
     

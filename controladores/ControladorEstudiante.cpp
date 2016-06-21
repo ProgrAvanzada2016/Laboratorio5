@@ -28,23 +28,26 @@ Estudiante* ControladorEstudiante::getEstudiante(string ci) {
 }
 
 void ControladorEstudiante::insertarEstudiante(DtEstudiante dte) {
-    Estudiante* e = new Estudiante();
-    e->setCi(dte.GetCi());
-    e->setNombre(dte.GetNombre());
-    e->setApellido(dte.GetApellido());
-    e->setFecha(dte.GetFecha());
-    e->setTelefono(dte.GetTelefono());
+    
+    Estudiante* e = new Estudiante(dte.GetCi(), dte.GetNombre(), dte.GetApellido(), dte.GetFecha(), dte.GetTelefono());
+//    Estudiante* e = new Estudiante();
+//    e->setCi(dte.GetCi());
+//    e->setNombre(dte.GetNombre());
+//    e->setApellido(dte.GetApellido());
+//    e->setFecha(dte.GetFecha());
+//    e->setTelefono(dte.GetTelefono());
           
     ManejadorEstudiante::getInstancia()->insertarEstudiante(e);
 }
 
 void ControladorEstudiante::modificarEstudiante(DtEstudiante* dte) {
-    Estudiante* e = new Estudiante();
-    e->setCi(dte->GetCi());
-    e->setNombre(dte->GetNombre());
-    e->setApellido(dte->GetApellido());
-    e->setFecha(dte->GetFecha());
-    e->setTelefono(dte->GetTelefono());
+    Estudiante* e = new Estudiante(dte->GetCi(), dte->GetNombre(), dte->GetApellido(), dte->GetFecha(), dte->GetTelefono());
+//    Estudiante* e = new Estudiante();
+//    e->setCi(dte->GetCi());
+//    e->setNombre(dte->GetNombre());
+//    e->setApellido(dte->GetApellido());
+//    e->setFecha(dte->GetFecha());
+//    e->setTelefono(dte->GetTelefono());
           
     ManejadorEstudiante::getInstancia()->modificarEstudiante(e);
 }
@@ -75,11 +78,22 @@ void ControladorEstudiante::insertarAsignatura(asignatura* a) {
     
     ManejadorCarrera::getInstancia()->insertarAsignatura(asig);
 }
+//agrega carreras existentes al estudiante
+void ControladorEstudiante::agregarCarreraEst(string ci,carrera* c) {
+    ManejadorEstudiante::getInstancia()->agregarCarreraEst(ci,c);
+}
 
+//inserta carrera nueva a la lista de carreras
+void ControladorEstudiante::insertarCarrera(carrera* c) {
+    carrera* car = new carrera;
+    car->setCodigo(c->getCodigo());
+    car->setNombre(c->getNombre());
+    ManejadorCarrera::getInstancia()->insertarCarrera(car);
+}
 
-
-
-
+list<dtCarrera*>* ControladorEstudiante::listarCarreras() {
+    return ManejadorCarrera::getInstancia()->listarCarreras();
+}
 
 
 

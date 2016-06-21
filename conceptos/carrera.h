@@ -13,10 +13,11 @@
 
 #ifndef CARRERA_H
 #define CARRERA_H
-
+#include "../datatypes/dtCarrera.h"
 #include <iostream>
 #include <stdio.h>
 #include <string>
+
 using namespace std;
 
 class carrera {
@@ -27,12 +28,15 @@ public:
     carrera();
     carrera(const carrera& orig);
     carrera(string codigo,string nombre);
+    dtCarrera* listarCarreras();
     //getters
     string getCodigo();
     string getNombre();
     //setters
     void setCodigo(string cod);
     void setNombre(string cod);
+    
+     
     
     virtual ~carrera();
 

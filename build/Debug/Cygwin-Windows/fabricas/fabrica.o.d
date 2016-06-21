@@ -12,6 +12,8 @@ build/Debug/Cygwin-Windows/fabricas/fabrica.o: fabricas/fabrica.cpp \
  fabricas/../interfaces/../conceptos/../conceptos/asignatura.h \
  fabricas/../interfaces/../conceptos/../conceptos/../datatypes/dtAsignatura.h \
  fabricas/../interfaces/../conceptos/../conceptos/carrera.h \
+ fabricas/../interfaces/../conceptos/../conceptos/../datatypes/dtCarrera.h \
+ fabricas/../interfaces/../conceptos/carrera.h \
  fabricas/../interfaces/IcontroladorOferta.h \
  fabricas/../interfaces/../conceptos/oferta.h \
  fabricas/../interfaces/../conceptos/Estudiante.h \
@@ -33,6 +35,8 @@ build/Debug/Cygwin-Windows/fabricas/fabrica.o: fabricas/fabrica.cpp \
  fabricas/../controladores/../manejadores/../conceptos/carrera.h \
  fabricas/../controladores/../conceptos/asignatura.h \
  fabricas/../controladores/../conceptos/carrera.h \
+ fabricas/../controladores/../conceptos/Estudiante.h \
+ fabricas/../controladores/../datatypes/dtCarrera.h \
  fabricas/../controladores/ControladorOferta.h \
  fabricas/../controladores/../interfaces/IcontroladorOferta.h
 
@@ -63,6 +67,10 @@ fabricas/../interfaces/../conceptos/../conceptos/asignatura.h:
 fabricas/../interfaces/../conceptos/../conceptos/../datatypes/dtAsignatura.h:
 
 fabricas/../interfaces/../conceptos/../conceptos/carrera.h:
+
+fabricas/../interfaces/../conceptos/../conceptos/../datatypes/dtCarrera.h:
+
+fabricas/../interfaces/../conceptos/carrera.h:
 
 fabricas/../interfaces/IcontroladorOferta.h:
 
@@ -105,6 +113,10 @@ fabricas/../controladores/../manejadores/../conceptos/carrera.h:
 fabricas/../controladores/../conceptos/asignatura.h:
 
 fabricas/../controladores/../conceptos/carrera.h:
+
+fabricas/../controladores/../conceptos/Estudiante.h:
+
+fabricas/../controladores/../datatypes/dtCarrera.h:
 
 fabricas/../controladores/ControladorOferta.h:
 

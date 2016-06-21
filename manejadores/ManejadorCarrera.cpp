@@ -34,6 +34,10 @@ void ManejadorCarrera::insertarAsignatura(asignatura* a) {
       asignaturas.insert(pair<string,asignatura*>(a->getCodigo(),a));
 }
 
+void ManejadorCarrera::insertarCarrera(carrera* c) {
+      carreras.insert(pair<string,carrera*>(c->getCodigo(),c));
+}
+
 ManejadorCarrera* ManejadorCarrera::instancia = NULL;  
 
 ManejadorCarrera* ManejadorCarrera::getInstancia() {
@@ -41,4 +45,12 @@ ManejadorCarrera* ManejadorCarrera::getInstancia() {
         instancia = new ManejadorCarrera;   
     }
     return instancia;
+}
+
+list<dtCarrera*>* ManejadorCarrera::listarCarreras() {
+    list<dtCarrera*>* result = new list<dtCarrera*>;
+    for (std::map<string, carrera*>::iterator it=carreras.begin(); it!=carreras.end(); ++it){
+        result->push_front(it->second->listarCarreras());
+    }
+    return result;    
 }

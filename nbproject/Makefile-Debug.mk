@@ -53,6 +53,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/datatypes/DtEstudiante.o \
 	${OBJECTDIR}/datatypes/dtAcepto.o \
 	${OBJECTDIR}/datatypes/dtAsignatura.o \
+	${OBJECTDIR}/datatypes/dtCarrera.o \
 	${OBJECTDIR}/datatypes/dtEmpresa.o \
 	${OBJECTDIR}/datatypes/dtEstudianteInfo.o \
 	${OBJECTDIR}/datatypes/dtLlamado.o \
@@ -182,6 +183,11 @@ ${OBJECTDIR}/datatypes/dtAsignatura.o: datatypes/dtAsignatura.cpp
 	${MKDIR} -p ${OBJECTDIR}/datatypes
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/datatypes/dtAsignatura.o datatypes/dtAsignatura.cpp
+
+${OBJECTDIR}/datatypes/dtCarrera.o: datatypes/dtCarrera.cpp 
+	${MKDIR} -p ${OBJECTDIR}/datatypes
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/datatypes/dtCarrera.o datatypes/dtCarrera.cpp
 
 ${OBJECTDIR}/datatypes/dtEmpresa.o: datatypes/dtEmpresa.cpp 
 	${MKDIR} -p ${OBJECTDIR}/datatypes

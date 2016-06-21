@@ -6,7 +6,8 @@ build/Debug/Cygwin-Windows/conceptos/Estudiante.o: \
  conceptos/../datatypes/dtAsignatura.h conceptos/../datatypes/dtOferta.h \
  conceptos/../datatypes/dtRango.h conceptos/../conceptos/asignatura.h \
  conceptos/../conceptos/../datatypes/dtAsignatura.h \
- conceptos/../conceptos/carrera.h conceptos/carrera.h
+ conceptos/../conceptos/carrera.h \
+ conceptos/../conceptos/../datatypes/dtCarrera.h conceptos/carrera.h
 
 conceptos/Estudiante.h:
 
@@ -31,5 +32,7 @@ conceptos/../conceptos/asignatura.h:
 conceptos/../conceptos/../datatypes/dtAsignatura.h:
 
 conceptos/../conceptos/carrera.h:
+
+conceptos/../conceptos/../datatypes/dtCarrera.h:
 
 conceptos/carrera.h:

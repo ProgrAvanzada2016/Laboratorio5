@@ -19,6 +19,7 @@
 #include "../conceptos/asignatura.h"
 #include "../conceptos/carrera.h"
 
+
 class ManejadorCarrera {
 public:
     ManejadorCarrera();
@@ -28,7 +29,8 @@ public:
     carrera* getCarrera(string codigo);
     asignatura* getAsignatura(string codigo);
     void insertarAsignatura(asignatura*);
-    
+    void insertarCarrera(carrera*);
+    list<dtCarrera*>* listarCarreras();
     
     virtual ~ManejadorCarrera();
 

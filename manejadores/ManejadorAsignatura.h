@@ -1,4 +1,4 @@
-#ifndef MANEJADORASIGNATURA_H
+ #ifndef MANEJADORASIGNATURA_H
 #define MANEJADORASIGNATURA_H
 
 #include <map>

@@ -7,7 +7,8 @@ build/Debug/Cygwin-Windows/conceptos/empresa.o: conceptos/empresa.cpp \
  conceptos/../datatypes/dtAsignatura.h conceptos/../datatypes/dtOferta.h \
  conceptos/../datatypes/dtRango.h conceptos/../conceptos/asignatura.h \
  conceptos/../conceptos/../datatypes/dtAsignatura.h \
- conceptos/../conceptos/carrera.h conceptos/asignatura.h \
+ conceptos/../conceptos/carrera.h \
+ conceptos/../conceptos/../datatypes/dtCarrera.h conceptos/asignatura.h \
  conceptos/../datatypes/dtRango.h conceptos/../datatypes/dtOferta.h \
  conceptos/../datatypes/dtSeccion.h conceptos/../datatypes/dtSucursal.h \
  conceptos/../datatypes/dtEmpresa.h
@@ -43,6 +44,8 @@ conceptos/../conceptos/asignatura.h:
 conceptos/../conceptos/../datatypes/dtAsignatura.h:
 
 conceptos/../conceptos/carrera.h:
+
+conceptos/../conceptos/../datatypes/dtCarrera.h:
 
 conceptos/asignatura.h:
 

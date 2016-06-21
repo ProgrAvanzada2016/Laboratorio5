@@ -18,6 +18,7 @@
 #include <list>
 #include <string>
 #include "../conceptos/Estudiante.h"
+#include "../conceptos/carrera.h"
 using namespace std;
 
 
@@ -39,7 +40,9 @@ public:
     virtual carrera* getCarrera(string codigo)=0;
     virtual asignatura* getAsignatura(string codigo)=0;
     virtual void insertarAsignatura(asignatura*)=0;
-
+    virtual void insertarCarrera(carrera*)=0;
+    virtual void agregarCarreraEst(string ci,carrera* c)=0;
+    virtual list<dtCarrera*>* listarCarreras()=0;
 private:
 
 };

@@ -1,80 +1,33 @@
-build/Debug/Cygwin-Windows/main.o: main.cpp datatypes/dtEmpresa.h \
- interfaces/IcontroladorOferta.h interfaces/../conceptos/oferta.h \
- interfaces/../conceptos/date.h interfaces/../conceptos/Estudiante.h \
- interfaces/../conceptos/persona.h \
- interfaces/../conceptos/../datatypes/DtEstudiante.h \
- interfaces/../conceptos/../datatypes/../conceptos/date.h \
- interfaces/../conceptos/../datatypes/dtEstudianteInfo.h \
- interfaces/../conceptos/../datatypes/dtAsignatura.h \
- interfaces/../conceptos/../datatypes/dtOferta.h \
- interfaces/../conceptos/../datatypes/dtRango.h \
- interfaces/../conceptos/../conceptos/asignatura.h \
- interfaces/../conceptos/../conceptos/../datatypes/dtAsignatura.h \
- interfaces/../conceptos/../conceptos/carrera.h \
- interfaces/../conceptos/asignatura.h \
- interfaces/../conceptos/../datatypes/dtRango.h \
- interfaces/../conceptos/../datatypes/dtOferta.h \
- interfaces/../conceptos/empresa.h interfaces/../conceptos/sucursal.h \
- interfaces/../conceptos/seccion.h interfaces/../conceptos/oferta.h \
- interfaces/../conceptos/../datatypes/dtSeccion.h \
- interfaces/../conceptos/../datatypes/dtSucursal.h \
- interfaces/../conceptos/../datatypes/dtEmpresa.h \
- interfaces/../conceptos/sucursal.h fabricas/fabrica.h \
+build/Debug/Cygwin-Windows/main.o: main.cpp fabricas/fabrica.h \
  fabricas/../interfaces/IcontroladorEstudiante.h \
  fabricas/../interfaces/../conceptos/Estudiante.h \
- fabricas/../interfaces/IcontroladorOferta.h conceptos/date.h
-
-datatypes/dtEmpresa.h:
-
-interfaces/IcontroladorOferta.h:
-
-interfaces/../conceptos/oferta.h:
-
-interfaces/../conceptos/date.h:
-
-interfaces/../conceptos/Estudiante.h:
-
-interfaces/../conceptos/persona.h:
-
-interfaces/../conceptos/../datatypes/DtEstudiante.h:
-
-interfaces/../conceptos/../datatypes/../conceptos/date.h:
-
-interfaces/../conceptos/../datatypes/dtEstudianteInfo.h:
-
-interfaces/../conceptos/../datatypes/dtAsignatura.h:
-
-interfaces/../conceptos/../datatypes/dtOferta.h:
-
-interfaces/../conceptos/../datatypes/dtRango.h:
-
-interfaces/../conceptos/../conceptos/asignatura.h:
-
-interfaces/../conceptos/../conceptos/../datatypes/dtAsignatura.h:
-
-interfaces/../conceptos/../conceptos/carrera.h:
-
-interfaces/../conceptos/asignatura.h:
-
-interfaces/../conceptos/../datatypes/dtRango.h:
-
-interfaces/../conceptos/../datatypes/dtOferta.h:
-
-interfaces/../conceptos/empresa.h:
-
-interfaces/../conceptos/sucursal.h:
-
-interfaces/../conceptos/seccion.h:
-
-interfaces/../conceptos/oferta.h:
-
-interfaces/../conceptos/../datatypes/dtSeccion.h:
-
-interfaces/../conceptos/../datatypes/dtSucursal.h:
-
-interfaces/../conceptos/../datatypes/dtEmpresa.h:
-
-interfaces/../conceptos/sucursal.h:
+ fabricas/../interfaces/../conceptos/persona.h \
+ fabricas/../interfaces/../conceptos/date.h \
+ fabricas/../interfaces/../conceptos/../datatypes/DtEstudiante.h \
+ fabricas/../interfaces/../conceptos/../datatypes/../conceptos/date.h \
+ fabricas/../interfaces/../conceptos/../datatypes/dtEstudianteInfo.h \
+ fabricas/../interfaces/../conceptos/../datatypes/dtAsignatura.h \
+ fabricas/../interfaces/../conceptos/../datatypes/dtOferta.h \
+ fabricas/../interfaces/../conceptos/../datatypes/dtRango.h \
+ fabricas/../interfaces/../conceptos/../conceptos/asignatura.h \
+ fabricas/../interfaces/../conceptos/../conceptos/../datatypes/dtAsignatura.h \
+ fabricas/../interfaces/../conceptos/../conceptos/carrera.h \
+ fabricas/../interfaces/../conceptos/../conceptos/../datatypes/dtCarrera.h \
+ fabricas/../interfaces/../conceptos/carrera.h \
+ fabricas/../interfaces/IcontroladorOferta.h \
+ fabricas/../interfaces/../conceptos/oferta.h \
+ fabricas/../interfaces/../conceptos/Estudiante.h \
+ fabricas/../interfaces/../conceptos/asignatura.h \
+ fabricas/../interfaces/../conceptos/../datatypes/dtRango.h \
+ fabricas/../interfaces/../conceptos/../datatypes/dtOferta.h \
+ fabricas/../interfaces/../conceptos/empresa.h \
+ fabricas/../interfaces/../conceptos/sucursal.h \
+ fabricas/../interfaces/../conceptos/seccion.h \
+ fabricas/../interfaces/../conceptos/oferta.h \
+ fabricas/../interfaces/../conceptos/../datatypes/dtSeccion.h \
+ fabricas/../interfaces/../conceptos/../datatypes/dtSucursal.h \
+ fabricas/../interfaces/../conceptos/../datatypes/dtEmpresa.h \
+ fabricas/../interfaces/../conceptos/sucursal.h
 
 fabricas/fabrica.h:
 
@@ -82,6 +35,56 @@ fabricas/../interfaces/IcontroladorEstudiante.h:
 
 fabricas/../interfaces/../conceptos/Estudiante.h:
 
+fabricas/../interfaces/../conceptos/persona.h:
+
+fabricas/../interfaces/../conceptos/date.h:
+
+fabricas/../interfaces/../conceptos/../datatypes/DtEstudiante.h:
+
+fabricas/../interfaces/../conceptos/../datatypes/../conceptos/date.h:
+
+fabricas/../interfaces/../conceptos/../datatypes/dtEstudianteInfo.h:
+
+fabricas/../interfaces/../conceptos/../datatypes/dtAsignatura.h:
+
+fabricas/../interfaces/../conceptos/../datatypes/dtOferta.h:
+
+fabricas/../interfaces/../conceptos/../datatypes/dtRango.h:
+
+fabricas/../interfaces/../conceptos/../conceptos/asignatura.h:
+
+fabricas/../interfaces/../conceptos/../conceptos/../datatypes/dtAsignatura.h:
+
+fabricas/../interfaces/../conceptos/../conceptos/carrera.h:
+
+fabricas/../interfaces/../conceptos/../conceptos/../datatypes/dtCarrera.h:
+
+fabricas/../interfaces/../conceptos/carrera.h:
+
 fabricas/../interfaces/IcontroladorOferta.h:
 
-conceptos/date.h:
+fabricas/../interfaces/../conceptos/oferta.h:
+
+fabricas/../interfaces/../conceptos/Estudiante.h:
+
+fabricas/../interfaces/../conceptos/asignatura.h:
+
+fabricas/../interfaces/../conceptos/../datatypes/dtRango.h:
+
+fabricas/../interfaces/../conceptos/../datatypes/dtOferta.h:
+
+fabricas/../interfaces/../conceptos/empresa.h:
+
+fabricas/../interfaces/../conceptos/sucursal.h:
+
+fabricas/../interfaces/../conceptos/seccion.h:
+
+fabricas/../interfaces/../conceptos/oferta.h:
+
+fabricas/../interfaces/../conceptos/../datatypes/dtSeccion.h:
+
+fabricas/../interfaces/../conceptos/../datatypes/dtSucursal.h:
+
+fabricas/../interfaces/../conceptos/../datatypes/dtEmpresa.h:
+
+fabricas/../interfaces/../conceptos/sucursal.h:

@@ -2,6 +2,8 @@
 #include "Estudiante.h"
 #include "carrera.h"
 
+Estudiante::Estudiante() {}
+
 Estudiante::Estudiante(string ci, string nombre, string apellido, date* fecNac) {
     this->setApellido(apellido);
     this->setCi(ci);
@@ -28,6 +30,10 @@ string Estudiante::getTelefono(){
     return this->telefono;
 }
 
+map<string, carrera*> Estudiante::getCarrerasEst(){
+    return this->carrerasEst;
+}
+
 void Estudiante::setCreditos(int creditos){
     this->creditos = creditos;
 }
@@ -35,6 +41,10 @@ void Estudiante::setCreditos(int creditos){
 void Estudiante::setTelefono(string telefono) {
     this->telefono = telefono;
 }
+void Estudiante::setCarrerasEst(map<string, carrera*> carrerasEst) {
+    this->carrerasEst = carrerasEst;
+}
+
 
 DtEstudiante* Estudiante::getDtEstudiante() {
     return new DtEstudiante(this->getCi(), this->getNombre(), this->getApellido(), this->getfecha(), this->getTelefono());
@@ -48,7 +58,7 @@ void Estudiante::modificarEstudiante(Estudiante* e){
 }
 
 void Estudiante::agregarCarrera(carrera* c) {
-    carreras.insert(pair<string,carrera*>(c->getCodigo(),c));
+    carrerasEst.insert(pair<string,carrera*>(c->getCodigo(),c));
 }
 
 

@@ -14,6 +14,7 @@ build/Debug/Cygwin-Windows/controladores/ControladorOferta.o: \
  controladores/../interfaces/../conceptos/../conceptos/asignatura.h \
  controladores/../interfaces/../conceptos/../conceptos/../datatypes/dtAsignatura.h \
  controladores/../interfaces/../conceptos/../conceptos/carrera.h \
+ controladores/../interfaces/../conceptos/../conceptos/../datatypes/dtCarrera.h \
  controladores/../interfaces/../conceptos/asignatura.h \
  controladores/../interfaces/../conceptos/../datatypes/dtRango.h \
  controladores/../interfaces/../conceptos/../datatypes/dtOferta.h \
@@ -67,6 +68,8 @@ controladores/../interfaces/../conceptos/../conceptos/asignatura.h:
 controladores/../interfaces/../conceptos/../conceptos/../datatypes/dtAsignatura.h:
 
 controladores/../interfaces/../conceptos/../conceptos/carrera.h:
+
+controladores/../interfaces/../conceptos/../conceptos/../datatypes/dtCarrera.h:
 
 controladores/../interfaces/../conceptos/asignatura.h:
 

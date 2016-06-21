@@ -32,6 +32,10 @@ carrera::carrera(const carrera& orig) {
  string carrera::getNombre(){
     return this->nombre;
  }
+ 
+ dtCarrera* carrera::listarCarreras(){
+    return new dtCarrera(this->getCodigo(), this->getNombre());
+}
     //setters
 void carrera::setCodigo(string codigo){
     this->codigo=codigo;

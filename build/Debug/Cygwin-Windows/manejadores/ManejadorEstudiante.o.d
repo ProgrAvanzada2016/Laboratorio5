@@ -10,7 +10,9 @@ build/Debug/Cygwin-Windows/manejadores/ManejadorEstudiante.o: \
  manejadores/../conceptos/../datatypes/dtRango.h \
  manejadores/../conceptos/../conceptos/asignatura.h \
  manejadores/../conceptos/../conceptos/../datatypes/dtAsignatura.h \
- manejadores/../conceptos/../conceptos/carrera.h
+ manejadores/../conceptos/../conceptos/carrera.h \
+ manejadores/../conceptos/../conceptos/../datatypes/dtCarrera.h \
+ manejadores/../conceptos/carrera.h manejadores/../datatypes/dtCarrera.h
 
 manejadores/ManejadorEstudiante.h:
 
@@ -37,3 +39,9 @@ manejadores/../conceptos/../conceptos/asignatura.h:
 manejadores/../conceptos/../conceptos/../datatypes/dtAsignatura.h:
 
 manejadores/../conceptos/../conceptos/carrera.h:
+
+manejadores/../conceptos/../conceptos/../datatypes/dtCarrera.h:
+
+manejadores/../conceptos/carrera.h:
+
+manejadores/../datatypes/dtCarrera.h:
